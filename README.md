@@ -1,6 +1,7 @@
 # Ethereum-Developer-Course
 https://academy.b9lab.com/courses/
 
+Copy of all materials is [here](https://docs.google.com/spreadsheets/d/1CRJ-z15SS8cCOezTVXzz5XFyPcT69zdFHvsbGqXYgXI)
 
 ### Module 1 - What is Blockchain?
 
