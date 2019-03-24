@@ -35,4 +35,6 @@ GOROOT=/usr/lib/go-1.10
 
 $ geth
 ```
- than follow instruction on [screenshot](https://drive.google.com/file/d/1qcCUXb9H1F0dNrIwOUod4X-hedKDFP0g/view?usp=sharing)
+- my result [gist](https://gist.github.com/Ebazhanov/63c9a49d8e0bd09ed607f27f89723b5c)
+
+- than follow instruction on [screenshot](https://drive.google.com/file/d/1qcCUXb9H1F0dNrIwOUod4X-hedKDFP0g/view?usp=sharing)
