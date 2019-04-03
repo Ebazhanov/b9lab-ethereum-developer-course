@@ -1,9 +1,9 @@
 
 ### 1. Choose all applicable properties of a Hash
 
- [x] A hash is deterministic, in that, calculating it twice yields the same result /CORRRECT/
- [-] A small change in the original value yields a smaller change in the hash than a big change in the original value
- [x] The probability of finding 2 different values that compute to the same hash is extremely low /CORRECT/
+ - [x] A hash is deterministic, in that, calculating it twice yields the same result /CORRRECT/
+ - [-] A small change in the original value yields a smaller change in the hash than a big change in the original value
+ - [x] The probability of finding 2 different values that compute to the same hash is extremely low /CORRECT/
 
 ### 2. What can we use a Merkle Tree for?
  
