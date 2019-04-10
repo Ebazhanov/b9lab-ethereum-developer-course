@@ -86,13 +86,13 @@ uint8 ageAlice;
 bytes31 nameAlice;
 ```
 
-- [ ] A
+- [x] A
 - [ ] B
-- [x] Storage is laid out differently although there is no difference in storage consumption.
+- [ ] Storage is laid out differently although there is no difference in storage consumption.
 - [ ] There is no difference either in storage layout or in storage consumption.
 
 ### 9. How do I get the list of keys of a mapping named myMap?
-- [ ] myMap.getKeys().
+- [x] myMap.getKeys().
 - [ ] Mapping.keys(myMapp).
 - [ ] myMap itself is an enumerable.
 - [ ] There is no such thing.
@@ -100,7 +100,7 @@ bytes31 nameAlice;
 ### 10. Which types can be assigned memory or storage locations?
 - [ ] None.
 - [ ] Arrays only.
-- [ ] Arrays and structs only.
+- [x] Arrays and structs only.
 - [ ] Arrays, structs and mappings only.
 - [ ] All.
 
@@ -148,11 +148,11 @@ contract Child is Parent {
     }
 }
 ```
-
  - [ ] You cannot deploy.
  - [ ] 0
  - [ ] 1
  - [ ] 2
+ 
 ### 15. With the following contracts, when you deploy Child with value initial = 1, what is the value of a?
 ```
 contract Parent {
@@ -169,7 +169,6 @@ contract Child is Parent {
     }
 }
 ```
-
  - [ ] You cannot deploy.
  - [ ] 0
  - [ ] 1
@@ -195,36 +194,41 @@ contract Child is Parent {
   - [ ] d. function actOn() returns (bool success, uint count) {}
 
 ### 19. Which functions return 1 and 2?
- a. function actOn() returns (uint, uint) { return 1, 2; }
- b. function actOn() returns (uint, uint) { return (1, 2); }
- c. function actOn() returns (uint value1, uint) { return 1, 2; }
- d. function actOn() returns (uint value1, uint) { return (1, 2); }
- e. function actOn() returns (uint value1, uint value2) { return 1, 2; }
- f. function actOn() returns (uint value1, uint value2) { return (1, 2); }
- g. function actOn() returns (uint value1, uint) { value1 = 1; return 2; }
- h. function actOn() returns (uint, uint value2) { value2 = 2; return 1; }
- i. function actOn() returns (uint value1, uint value2) { value1 = 1; value2 = 2; }
+ - [ ] a. function actOn() returns (uint, uint) { return 1, 2; }
+ - [ ] b. function actOn() returns (uint, uint) { return (1, 2); }
+ - [ ] c. function actOn() returns (uint value1, uint) { return 1, 2; }
+ - [ ] d. function actOn() returns (uint value1, uint) { return (1, 2); }
+ - [ ] e. function actOn() returns (uint value1, uint value2) { return 1, 2; }
+ - [ ] f. function actOn() returns (uint value1, uint value2) { return (1, 2); }
+ - [ ] g. function actOn() returns (uint value1, uint) { value1 = 1; return 2; }
+ - [ ] h. function actOn() returns (uint, uint value2) { value2 = 2; return 1; }
+ - [ ] i. function actOn() returns (uint value1, uint value2) { value1 = 1; value2 = 2; }
+
 ### 20. Which statements are correct?
- a. When I call a function on the same contract while prefixing it with this. it is the same memory and stack.
- b. When I call an internal function on the same contract without prefixing it with this. it is the same memory and stack.
- c. When I call a public function on the same contract without prefixing it with this. it is the same memory and stack.
- d. When I call an external function on the same contract without prefixing it with this. it is the same memory and stack.
- e. When I call a public function not marked as external on another contract, it is the same memory and stack.
- f. When I call a public function not marked as external on another contract, an internal transaction is created.
+ - [ ] a. When I call a function on the same contract while prefixing it with this. it is the same memory and stack.
+ - [ ] b. When I call an internal function on the same contract without prefixing it with this. it is the same memory and stack.
+ - [ ] c. When I call a public function on the same contract without prefixing it with this. it is the same memory and stack.
+ - [ ] d. When I call an external function on the same contract without prefixing it with this. it is the same memory and stack.
+ - [ ] e. When I call a public function not marked as external on another contract, it is the same memory and stack.
+ - [ ] f. When I call a public function not marked as external on another contract, an internal transaction is created.
+
 ### 21. Given this contract, what is the value of a after deployment?
+```
 contract NotEasyToFindAnExpressiveName {
     uint a;
     function notEasyToFindAnExpressiveName() {
         a++;
     }
 }
-
- You cannot deploy.
- null
- 0
- 1
- 2
+```
+ - [ ] You cannot deploy.
+ - [ ] null
+ - [ ] 0
+ - [ ] 1
+ - [ ] 2
+ 
 ### 22. Given the below contract, what will be the output of the test function?
+```
 pragma solidity ^0.4.17;
 contract Alpha {
     struct Beta {
@@ -258,29 +262,30 @@ contract Alpha {
         i = 4;
     }
 }
-
- 1, 1, 1
- 1, 3, 1
- 1, 1, 4
- 1, 3, 4
- 2, 1, 1
- 2, 3, 1
- 2, 1, 4
- 2, 3, 4
- 3, 1, 1
- 3, 3, 1
- 3, 1, 4
- 3, 3, 4
+```
+ - [ ] 1, 1, 1
+ - [ ] 1, 3, 1
+ - [ ] 1, 1, 4
+ - [ ] 1, 3, 4
+ - [ ] 2, 1, 1
+ - [ ] 2, 3, 1
+ - [ ] 2, 1, 4
+ - [ ] 2, 3, 4
+ - [ ] 3, 1, 1
+ - [ ] 3, 3, 1
+ - [ ] 3, 1, 4
+ - [ ] 3, 3, 4
+ 
 ### 23. Given the contract above, what will be the output of the test function if we call it with .call?
- 1, 1, 1
- 1, 3, 1
- 1, 1, 4
- 1, 3, 4
- 2, 1, 1
- 2, 3, 1
- 2, 1, 4
- 2, 3, 4
- 3, 1, 1
- 3, 3, 1
- 3, 1, 4
- 3, 3, 4
+ - [ ] 1, 1, 1
+ - [ ] 1, 3, 1
+ - [ ] 1, 1, 4
+ - [ ] 1, 3, 4
+ - [ ] 2, 1, 1
+ - [ ] 2, 3, 1
+ - [ ] 2, 1, 4
+ - [ ] 2, 3, 4
+ - [ ] 3, 1, 1
+ - [ ] 3, 3, 1
+ - [ ] 3, 1, 4
+ - [ ] 3, 3, 4
