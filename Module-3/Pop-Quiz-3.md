@@ -106,30 +106,30 @@ bytes31 nameAlice;
 
 ### 11. Which of these statements are true when it comes to a mapping?
  - [ ] a. Overwriting an existing value always fails.
- - [ ] b. Overwriting an existing value may fail.
+ - [x] b. Overwriting an existing value may fail.
  - [ ] c. Overwriting an existing value never fails.
  - [ ] d. Directly writing on the storage location of an existing value always fails.
- - [ ] e. Directly writing on the storage location of an existing value may fail.
+ - [x] e. Directly writing on the storage location of an existing value may fail.
  - [ ] f. Directly writing on the storage location of an existing value never fails.
  - [ ] g. Reading an unset value always fails.
- - [ ] h. Reading an unset value may fail.
+ - [x] h. Reading an unset value may fail.
  - [ ] i. Reading an unset value never fails.
  - [ ] j. Directly reading the storage location of an existing value always fails.
- - [ ] k. Directly reading the storage location of an existing value may fail.
+ - [x] k. Directly reading the storage location of an existing value may fail.
  - [ ] l. Directly reading the storage location of an existing value never fails.
  - [ ] m. Two different keys may point to the same location.
- - [ ] n. Two different keys never point to the same location.
+ - [x] n. Two different keys never point to the same location.
  
 ### 12. Make contract Child inherit from contract Parent:
  - [ ] contract Child : Parent {}
- - [ ] contract Child is Parent {}
+ - [x] contract Child is Parent {}
  - [ ] contract Child extends Parent {}
  - [ ] contract Child inherits Parent {}
  
 ### 13. Make contract Child's constructor call contract Parent's constructor
  - [ ] constructor(uint arg) Parent(arg) {}
  - [ ] constructor(uint arg) is Parent(arg) {}
- - [ ] constructor(uint arg) : Parent(arg) {}
+ - [x] constructor(uint arg) : Parent(arg) {}
  - [ ] constructor(uint arg) { Parent(arg); }
  
 ### 14. With the following contracts, when you deploy Child, what is the value of a?
