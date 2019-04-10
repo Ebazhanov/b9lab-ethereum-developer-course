@@ -140,8 +140,6 @@ contract Parent {
         a = 1;
     }
 }
-```
-```
 contract Child is Parent {
     constructor() {
         a++;
@@ -151,9 +149,9 @@ contract Child is Parent {
  - [ ] You cannot deploy.
  - [ ] 0
  - [ ] 1
- - [ ] 2
+ - [x] 2
  
-### 15. With the following contracts, when you deploy Child with value initial = 1, what is the value of a?
+### 15. With the following contracts, when you deploy Child with value , what is the value of a?
 ```
 contract Parent {
     uint a;
@@ -161,48 +159,45 @@ contract Parent {
         a = initial;
     }
 }
-```
-```
 contract Child is Parent {
     constructor(uint initial) {
         a++;
     }
 }
 ```
- - [ ] You cannot deploy.
+ - [x] You cannot deploy.
  - [ ] 0
  - [ ] 1
  - [ ] 2
  
- 
 ### 16. Make contract Child override contract Parent's function named actOn() and call the parent one:
-  - [ ] a. function actOn() { super.actOn(); }
-  - [ ] b. function actOn() { Parent.actOn(); }
+  - [x] a. function actOn() { super.actOn(); }
+  - [x] b. function actOn() { Parent.actOn(); }
   - [ ] c. function actOn() { parent.actOn(); }
   - [ ] d. function actOn() : actOn {}
   
 ### 17. What does revert do?
   - [ ] It interrupts execution.
   - [ ] It interrupts the current execution scope.
-  - [ ] It stops and rolls back the current transaction it is in, only.
+  - [x] It stops and rolls back the current transaction it is in, only.
   - [ ] It stops and rolls back the current transaction and all transactions up to the main transaction.
 
 ### 18. How can my function return more than one value?
   - [ ] a. function actOn() returns bool, uint {}
-  - [ ] b. function actOn() returns (bool, uint) {}
+  - [x] b. function actOn() returns (bool, uint) {}
   - [ ] c. function actOn() returns bool success, uint count {}
-  - [ ] d. function actOn() returns (bool success, uint count) {}
+  - [x] d. function actOn() returns (bool success, uint count) {}
 
 ### 19. Which functions return 1 and 2?
- - [ ] a. function actOn() returns (uint, uint) { return 1, 2; }
- - [ ] b. function actOn() returns (uint, uint) { return (1, 2); }
+ - [x] a. function actOn() returns (uint, uint) { return 1, 2; }
+ - [x] b. function actOn() returns (uint, uint) { return (1, 2); }
  - [ ] c. function actOn() returns (uint value1, uint) { return 1, 2; }
  - [ ] d. function actOn() returns (uint value1, uint) { return (1, 2); }
- - [ ] e. function actOn() returns (uint value1, uint value2) { return 1, 2; }
- - [ ] f. function actOn() returns (uint value1, uint value2) { return (1, 2); }
+ - [x] e. function actOn() returns (uint value1, uint value2) { return 1, 2; }
+ - [x] f. function actOn() returns (uint value1, uint value2) { return (1, 2); }
  - [ ] g. function actOn() returns (uint value1, uint) { value1 = 1; return 2; }
  - [ ] h. function actOn() returns (uint, uint value2) { value2 = 2; return 1; }
- - [ ] i. function actOn() returns (uint value1, uint value2) { value1 = 1; value2 = 2; }
+ - [x] i. function actOn() returns (uint value1, uint value2) { value1 = 1; value2 = 2; }
 
 ### 20. Which statements are correct?
  - [ ] a. When I call a function on the same contract while prefixing it with this. it is the same memory and stack.
@@ -223,7 +218,7 @@ contract NotEasyToFindAnExpressiveName {
 ```
  - [ ] You cannot deploy.
  - [ ] null
- - [ ] 0
+ - [x] 0
  - [ ] 1
  - [ ] 2
  
