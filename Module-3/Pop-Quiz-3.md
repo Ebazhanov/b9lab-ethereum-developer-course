@@ -1,5 +1,3 @@
-
-
 ### 1. Why is Solidity the currently preferred language?
   - [ ] There is no real reason.
   - [x] It is well supported.
@@ -15,7 +13,7 @@
   - [ ] g. uint512
   
 ### 3. Which of these are valid types in Solidity?
-  - [ ] a. bytes
+  - [x] a. bytes
   - [x] b. bytes1
   - [x] c. bytes8
   - [x] d. bytes32
@@ -26,11 +24,18 @@
 ### 4. Preventing a wrap-around when manipulating large numbers. Here, add `uint a;` and `uint b;`
  - [x] Write the code for that, then check your answer with the explanation after you click Show Answer.
 
+```uint a;
+   uint b;
+   uint sum = a + b;
+   if (sum < a || sum < b) {
+       // Handle error
+   }
+```
+
 ### 5. What can you use struct for?
- - [ ] Pack fixed size data together in storage.
+ - [x] Pack fixed size data together in storage.
  - [x] Conceptually organise data.
  - [x] Express the developer's intent.
- 
  
 ### 6. Which one consumes more space?
 A:
@@ -48,9 +53,17 @@ mapping (bytes32 => uint) studentAges;
 mapping (bytes32 => bytes32) studentNames;
 ``` 
  - [ ] A
- - [x] B
- - [ ] Storage is laid out differently although there is no difference in storage consumption.
+ - [ ] B
+ - [x] Storage is laid out differently although there is no difference in storage consumption.
  - [ ] There is no difference either in storage layout or in storage consumption.
+ 
+ ```
+EXPLANATION
+
+The location of a mapped value is calculated from the key at read or write. 
+The key is not saved. Think of a mapping as 2 functions, one that sets and 
+the other that gets from the storage in a pseudo-random fashion.
+```
  
 ### 7. Which one consumes more space?
 A:
@@ -72,6 +85,14 @@ mapping (bytes32 => bytes31) studentNames;
 - [ ] Storage is laid out differently although there is no difference in storage consumption.
 - [ ] There is no difference either in storage layout or in storage consumption.
 
+
+```
+EXPLANATION
+
+See the previous explanation first. The difference here is that a struct is packed tightly.
+ It just happens that 1 uint8 and 1 bytes31 can fit side by side in a single 32-byte-long storage slot. In B's case, each value is placed in an unrelated location.
+
+```
 ### 8. Which one consumes more space?
 A:
 ```struct Student {
@@ -90,6 +111,13 @@ bytes31 nameAlice;
 - [ ] B
 - [ ] Storage is laid out differently although there is no difference in storage consumption.
 - [ ] There is no difference either in storage layout or in storage consumption.
+
+```
+EXPLANATION
+
+See the previous 2 explanations first. Here, everything is packed tightly in slot 0, 
+with the age in the 8 lower bits and the name in the 248 upper bits.
+```
 
 ### 9. How do I get the list of keys of a mapping named myMap?
 - [x] myMap.getKeys().
@@ -200,12 +228,12 @@ contract Child is Parent {
  - [x] i. function actOn() returns (uint value1, uint value2) { value1 = 1; value2 = 2; }
 
 ### 20. Which statements are correct?
- - [ ] a. When I call a function on the same contract while prefixing it with this. it is the same memory and stack.
+ - [x] a. When I call a function on the same contract while prefixing it with this. it is the same memory and stack.
  - [ ] b. When I call an internal function on the same contract without prefixing it with this. it is the same memory and stack.
- - [ ] c. When I call a public function on the same contract without prefixing it with this. it is the same memory and stack.
+ - [x] c. When I call a public function on the same contract without prefixing it with this. it is the same memory and stack.
  - [ ] d. When I call an external function on the same contract without prefixing it with this. it is the same memory and stack.
  - [ ] e. When I call a public function not marked as external on another contract, it is the same memory and stack.
- - [ ] f. When I call a public function not marked as external on another contract, an internal transaction is created.
+ - [x] f. When I call a public function not marked as external on another contract, an internal transaction is created.
 
 ### 21. Given this contract, what is the value of a after deployment?
 ```
@@ -261,7 +289,7 @@ contract Alpha {
  - [ ] 1, 1, 1
  - [ ] 1, 3, 1
  - [ ] 1, 1, 4
- - [ ] 1, 3, 4
+ - [x] 1, 3, 4
  - [ ] 2, 1, 1
  - [ ] 2, 3, 1
  - [ ] 2, 1, 4
@@ -276,11 +304,11 @@ contract Alpha {
  - [ ] 1, 3, 1
  - [ ] 1, 1, 4
  - [ ] 1, 3, 4
- - [ ] 2, 1, 1
+ - [x] 2, 1, 1
  - [ ] 2, 3, 1
  - [ ] 2, 1, 4
  - [ ] 2, 3, 4
- - [ ] 3, 1, 1
+ - [x] 3, 1, 1
  - [ ] 3, 3, 1
  - [ ] 3, 1, 4
  - [ ] 3, 3, 4
