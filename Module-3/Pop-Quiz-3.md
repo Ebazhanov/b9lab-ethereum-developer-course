@@ -357,10 +357,10 @@ Function storageSet's input is a storage reference, so when you make an update t
 
 Function Set's input is a memory object, so when you pass it a storage object, it will first make a memory copy of it, then when you update the memory copy, it leaves the original storage object intact.
 
-This explains why betaStor == 2.
+This explainss why betaStor == 2.
 
 Function Set's input is a memory object, so when you pass it a memory object internally, it will pass a reference to the memory object. So if you make a change to it, you update the original memory object.
-
+sdf
 This explains why betaMem == 3.
 
 Function setInt's input is never a reference because it is a uint. So changing it has no effect on the original.
