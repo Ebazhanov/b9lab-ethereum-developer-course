@@ -5,54 +5,55 @@
 
 Progress:
 ---------
+##### Module 13 - Final Exam
+- Final Exam Quiz: ...
+- Debugging Exercises: ...
+- Final Project: ...
 
-##### Module 1 'What is Blockchain' 
-- Practice: done
-- Pop Quiz: [done](https://github.com/Ebazhanov/b9lab-ethereum-developer-course/blob/master/Module-1/PracticeQuiz-1.md)
+##### Module 12 - Ethics
+- Practice: ... 
 
-##### Module 2 - Ethereum Basics?
-- Practice: done
-- Pop Quiz: [done](https://github.com/Ebazhanov/b9lab-ethereum-developer-course/blob/master/Module-2/Pop-Quiz-2.md)
+##### Module 11 - Ecosystem
+- Practice: ... 
 
-##### Module 3 - Contracts
-- Practice: done
-- Pop Quiz: [done](https://github.com/Ebazhanov/b9lab-ethereum-developer-course/tree/master/Module-3)
+##### Module 10 - Code and Projects
+- Practice: ...
+
+##### Module 9 - Project 3
+- Practice: [RockPaperScissors]()
+
+##### Module 8 - Coding and Patterns
+- Practice: ...
+
+##### Module 7 - Project 2
+- Practice: [Remittance](https://github.com/Ebazhanov/smart-contract-remittance-b9lab)
+
+##### Module 6 - Truffle and Coding
+- Practice: [Non-Truffle-Tests](https://github.com/Ebazhanov/smart-contract-splitter-b9lab/tree/master/app-non-truffel)
+- Practice: [Webpack-Build-for-Web](https://github.com/Ebazhanov/smart-contract-splitter-b9lab/tree/master/app-web)
+
+##### Module 5 - Project 1
+- Practice: [Splitter](https://github.com/Ebazhanov/smart-contract-splitter-b9lab)
 
 ##### Module 4 - Web3 and Truffle
 - Practice: done
 - Pop Quiz-1: [done](https://github.com/Ebazhanov/b9lab-ethereum-developer-course/blob/master/Module-4/Pop-Quiz-4.1.md)
 - Pop Quiz-2: [done](https://github.com/Ebazhanov/b9lab-ethereum-developer-course/blob/master/Module-4/Pop-Quiz-4.2.md)
 
-##### Module 5 - Project 1
-- Practice: [Splitter](https://github.com/Ebazhanov/smart-contract-splitter-b9lab)
+##### Module 3 - Contracts
+- Practice: done
+- Pop Quiz: [done](https://github.com/Ebazhanov/b9lab-ethereum-developer-course/tree/master/Module-3)
 
-##### Module 6 - Truffle and Coding
-- Practice: [Non-Truffle-Tests](https://github.com/Ebazhanov/smart-contract-splitter-b9lab/tree/master/app-non-truffel)
-- Practice: [Webpack-Build-for-Web](https://github.com/Ebazhanov/smart-contract-splitter-b9lab/tree/master/app-web)
+##### Module 2 - Ethereum Basics?
+- Practice: done
+- Pop Quiz: [done](https://github.com/Ebazhanov/b9lab-ethereum-developer-course/blob/master/Module-2/Pop-Quiz-2.md)
 
-##### Module 7 - Project 2
-- Practice: [Remittance](https://github.com/Ebazhanov/smart-contract-remittance-b9lab)
+##### Module 1 'What is Blockchain' 
+- Practice: done
+- Pop Quiz: [done](https://github.com/Ebazhanov/b9lab-ethereum-developer-course/blob/master/Module-1/PracticeQuiz-1.md)
 
-##### Module 8 - Coding and Patterns
-- Practice: ...
 
-##### Module 9 - Project 3
-- Practice: [RockPaperScissors]()
-
-##### Module 10 - Code and Projects
-- Practice: ...
-
-##### Module 11 - Ecosystem
-- Practice: ... 
-
-##### Module 12 - Ethics
-- Practice: ... 
-
-##### Module 13 - Final Exam
-- Final Exam Quiz: ...
-- Debugging Exercises: ...
-- Final Project: ...
-
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 ## COURSE CURRICULUM
 Certified Ethereum Developer Course
