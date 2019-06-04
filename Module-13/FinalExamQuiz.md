@@ -8,107 +8,107 @@ This sections covers the underlying theory of how blockchain technology works. Q
 
 #### 1.1. In the context of blockchain, what is the most fundamental definition of a transaction?
  - [ ] A transmission of a message between nodes
- - [ ] An atomic event that is allowed by the underlying protocol
+ - [x] An atomic event that is allowed by the underlying protocol
  - [ ] Exchange of a hash table between two peers
  
 #### 1.2. In the context of a distributed ledger, how do you define blockchain? Which of the following statements are correct?
- - [ ] As the ordered list of all transactions since inception
- - [ ] As a well-ordered set of blocks
+ - [x] As the ordered list of all transactions since inception
+ - [x] As a well-ordered set of blocks
  - [ ] As a chain of transactions
- - [ ] As a well-ordered set of data, on which all peers eventually agree.
+ - [x] As a well-ordered set of data, on which all peers eventually agree.
  - [ ] As a shared real-time transaction network
  
 #### 1.3. Thinking about traditional network and database architecture, what does a transaction do in a blockchain environment?
  - [ ] Update one table on one machine
- - [ ] Update separate tables of accounts for the whole network
+ - [x] Update separate tables of accounts for the whole network
  
 #### 1.4. In Blockchain, what is the truth?
  - [ ] The truth is what Vitalik Buterin says
  - [ ] The truth is what the developer community agrees on
  - [ ] The truth is what the biggest miner considers the truth
- - [ ] The truth is the set of data that all participants eventually agree on
+ - [x] The truth is the set of data that all participants eventually agree on
  
 #### 1.5. What does a cryptographic hash function do?
  - [ ] It cracks a password challenge
- - [ ] It converts an input, a.k.a. the message, into an output, a.k.a the hash
+ - [x] It converts an input, a.k.a. the message, into an output, a.k.a the hash
  
 #### 1.6. Take the example of the KECCAK-256 hashing algorithm. Can the message easily be calculated from the hash with a normal desktop computer?
  - [ ] Yes
- - [ ] No
+ - [x] No
  
 #### 1.7. What is the difference between the KECCAK-256 hashes of "bird" and of "bard"?
  - [ ] One letter in the hash is different
  - [ ] At most 50% of the content differ
- - [ ] The hashes differ fundamentally
+ - [x] The hashes differ fundamentally
  
 #### 1.8. Are there two different messages that have the same SHA-512 hash value?
  - [ ] Yes, and the likelihood of finding two messages with the same hash value is quite high
- - [ ] Yes, but the likelihood is extremely low, no example has been found yet
+ - [x] Yes, but the likelihood is extremely low, no example has been found yet
  - [ ] No, all hashes are unique
  
 #### 1.9. Can hash functions be used to index messages?
- - [ ] Yes, by mapping hashes to their messages
+ - [x] Yes, by mapping hashes to their messages
  - [ ] No, because hashes are not unique
  
 #### 1.10. Can a hash be used to check that a message has not been changed?
  - [ ] No
- - [ ] Yes
+ - [x] Yes
  
 #### 1.11. Where is data stored in a Merkle Tree?
- - [ ] In each node of the tree
+ - [x] In each node of the tree
  - [ ] In the leaves of the tree
  - [ ] In the root of the tree
  
 #### 1.12. How is data collected from a Merkle tree?
  - [ ] The tree is traversed depth-first and data is read from each leaf
- - [ ] The tree is traversed depth-first and data is read from every node
+ - [x] The tree is traversed depth-first and data is read from every node
  - [ ] The data is extracted from the merkle root
  
 #### 1.13. What is a node in a Merkle Tree?
  - [ ] A node contains the data of its parent nodes
- - [ ] A node contains the hash of its children
+ - [x] A node contains the hash of its children
  
 #### 1.14. How is a gossip network defined?
  - [ ] A gossip network stores data on a central server accessible to a set of machines
- - [ ] In a gossip network each node relays received data to its other peers
+ - [x] In a gossip network each node relays received data to its other peers
  
 #### 1.15. What is the Byzantine General's Problem?
  - [ ] How to distribute data in a hierarchy-free, permission-less and failure-prone network
- - [ ] How to reach consensus in a hierarchy-free, permission-less and failure-prone network
+ - [x] How to reach consensus in a hierarchy-free, permission-less and failure-prone network
  - [ ] How to find peers in a hierarchy-free, permission-less and failure-prone network
  
 #### 1.16. Does the Byzantine General's problem have an absolute solution?
- - [ ] No, it can only be mitigated
+ - [x] No, it can only be mitigated
  - [ ] Yes, it has been solved by the Byzantine General's Solution
  
 #### 1.17. In the ethash Proof-of-Work consensus algorithms, what determines whether a block is valid?
- - [ ] A hash calculation of a combination of merkle roots, block number, previous block hash, beneficiary address, timestamp and nonce has the right number of leading 0's
+ - [x] A hash calculation of a combination of merkle roots, block number, previous block hash, beneficiary address, timestamp and nonce has the right number of leading 0's
  - [ ] A hash calculation of a combination of merkle roots, block number, previous block hash, timestamp and nonce has the right number of leading 0's
 
 #### 1.18. In the ethash and hashcash Proof-of-Work consensus algorithms, what is a nonce?
  - [ ] A random string that has never been used
  - [ ] The hash of the current timestamp used by the miner
- - [ ] A one-time word that is varied by the miner to achieve different hashes
+ - [x] A one-time word that is varied by the miner to achieve different hashes
 
 #### 1.19. In the ethash and hashcash Proof-of-Work consensus algorithms, what does the difficulty determine?
- - [ ] The number of blocks a miner has to propose before the network accepts one
+ - [x] The number of blocks a miner has to propose before the network accepts one
  - [ ] The number of leading zeros required in a block hash calculation required for a valid block
  - [ ] The time a transaction has to remain in the transaction pool
 
 #### 1.20. What does the CAP theorem stand for?
  - [ ] Consistency, Affirmability, Partition
  - [ ] Christopher Antonopolous Programme
- - [ ] Consistency, Availability, Partition tolerance
+ - [x] Consistency, Availability, Partition tolerance
  
 #### 1.21. For a malicious node to remove or insert transactions, it would need to update the root hash of the containing block's Merkle tree, update the nonce of the containing block, update the hash of the containing block and do the same for all subsequent blocks. Under what circumstances is that possible?
  - [ ] If the attacker issues at least 50% of all transactions
- - [ ] If the attacker controls more than 50% of the mining power in a blockchain network
+ - [x] If the attacker controls more than 50% of the mining power in a blockchain network
  
 #### 1.22. What does a generic block header contain?
  - [ ] List of Transactions
  - [ ] State changes resulting from transactions
- - [ ] Merkle Root of transactions
- - [ ] Hash of previous block
+ - [x] Merkle Root of transactions
+ - [x] Hash of previous block
  - [ ] Signatures of all senders of transactions
  
 #### 1.23. Where is the Merkle root used in the context of blockchain?
