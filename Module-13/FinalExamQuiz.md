@@ -112,23 +112,23 @@ This sections covers the underlying theory of how blockchain technology works. Q
  - [ ] Signatures of all senders of transactions
  
 #### 1.23. Where is the Merkle root used in the context of blockchain?
- - [ ] The genesis block
- - [ ] The root hash of a Merkle tree containing all transactions in a block
+ - [x] The genesis block
+ - [x] The root hash of a Merkle tree containing all transactions in a block
  - [ ] The root hash of a Merkle tree of all previous blocks
  
 #### 1.24. What can we use a Merkle Tree for?
  - [ ] Compress data by calculating the Merkle root
- - [ ] Compare complex collections of data by comparing the Merkle root
+ - [x] Compare complex collections of data by comparing the Merkle root
  - [ ] Use the Merkle root to calculate the original dataset
  
 #### 1.25. How does a hashtable, whose keys are hashed from the values, compare to a table whose content is indexed by arbitrary id? Select all correct statements.
  - [ ] a table indexed by arbitrary id is faster to read
  - [ ] a table indexed by hash allows incorporation of checks for protection from error and malice, unlike one by arbitrary id
- - [ ] a table indexed by hash can grow much larger than one by arbitrary id
- - [ ] a table indexed by arbitrary id can hold duplicate values, unlike one by hash
+ - [x] a table indexed by hash can grow much larger than one by arbitrary id
+ - [x] a table indexed by arbitrary id can hold duplicate values, unlike one by hash
  
 #### 1.26. What is the double-spend attack within Bitcoin?
- - [ ] the attacker sends 2 different transactions at the same time to the network, in order to send the same coin to 2 different recipients before the nodes can spot the fraud
+ - [x] the attacker sends 2 different transactions at the same time to the network, in order to send the same coin to 2 different recipients before the nodes can spot the fraud
  - [ ] the attacker sends the coin to a recipient in exchange for a consideration, then waits to receive the consideration, then builds a fork that does not contain the previous transaction and that is still acceptable to the network
  - [ ] the attacker sends the coin to a recipient in exchange for a consideration, then waits to receive the consideration, then sends another transaction to cancel the first transaction
 
@@ -139,7 +139,7 @@ This sections covers the underlying theory of how blockchain technology works. Q
 
 #### 1.28. What is an uncle, a.k.a. ommer?
  - [ ] an uncle is a block that contains specific information that identifies it as an uncle
- - [ ] an uncle is a block that failed to be identified as the parent of another block
+ - [x] an uncle is a block that failed to be identified as the parent of another block
  - [ ] an uncle is a block that is referenced by another one according to certain criteria
 
 #### 1.29. What is the difficulty in a blockchain network?
