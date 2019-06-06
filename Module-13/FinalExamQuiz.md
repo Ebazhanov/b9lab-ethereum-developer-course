@@ -133,7 +133,7 @@ This sections covers the underlying theory of how blockchain technology works. Q
  - [ ] the attacker sends the coin to a recipient in exchange for a consideration, then waits to receive the consideration, then sends another transaction to cancel the first transaction
 
 #### 1.27. Select all statements that are true for Proof-of-Work
- - [ ] Any miner can propose new blocks
+ - [x] Any miner can propose new blocks
  - [ ] Potential miners must get approval by the network
  - [ ] More than one miner can find a correct block in the same time
 
@@ -143,7 +143,7 @@ This sections covers the underlying theory of how blockchain technology works. Q
  - [ ] an uncle is a block that is referenced by another one according to certain criteria
 
 #### 1.29. What is the difficulty in a blockchain network?
- - [ ] The difficulty determines how likely it is for a miner to find a valid block
+ - [x] The difficulty determines how likely it is for a miner to find a valid block
  - [ ] The difficulty sets the fees a user has to pay for a transaction
  - [ ] The difficulty sets how difficult it is for clients to connect to the network
 
@@ -151,7 +151,7 @@ This sections covers the underlying theory of how blockchain technology works. Q
  - [ ] Anyone can propose new blocks
  - [ ] Miners with a stake in the network can propose blocks
  - [ ] More than one miner can find a correct block in the same time
- - [ ] The hypothesis for PoS suggests that participants with a large stake are more trustworthy
+ - [x] The hypothesis for PoS suggests that participants with a large stake are more trustworthy
  
 Ethereum
 --------
