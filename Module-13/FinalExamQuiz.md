@@ -60,8 +60,8 @@ This sections covers the underlying theory of how blockchain technology works. Q
  - [ ] In the root of the tree
  
 #### 1.12. How is data collected from a Merkle tree?
- - [ ] The tree is traversed depth-first and data is read from each leaf
- - [x] The tree is traversed depth-first and data is read from every node
+ - [x] The tree is traversed depth-first and data is read from each leaf
+ - [ ] The tree is traversed depth-first and data is read from every node
  - [ ] The data is extracted from the merkle root
  
 #### 1.13. What is a node in a Merkle Tree?
@@ -123,13 +123,13 @@ This sections covers the underlying theory of how blockchain technology works. Q
  
 #### 1.25. How does a hashtable, whose keys are hashed from the values, compare to a table whose content is indexed by arbitrary id? Select all correct statements.
  - [ ] a table indexed by arbitrary id is faster to read
- - [ ] a table indexed by hash allows incorporation of checks for protection from error and malice, unlike one by arbitrary id
- - [x] a table indexed by hash can grow much larger than one by arbitrary id
+ - [x] a table indexed by hash allows incorporation of checks for protection from error and malice, unlike one by arbitrary id
+ - [ ] a table indexed by hash can grow much larger than one by arbitrary id
  - [x] a table indexed by arbitrary id can hold duplicate values, unlike one by hash
  
 #### 1.26. What is the double-spend attack within Bitcoin?
- - [x] the attacker sends 2 different transactions at the same time to the network, in order to send the same coin to 2 different recipients before the nodes can spot the fraud
- - [ ] the attacker sends the coin to a recipient in exchange for a consideration, then waits to receive the consideration, then builds a fork that does not contain the previous transaction and that is still acceptable to the network
+ - [ ] the attacker sends 2 different transactions at the same time to the network, in order to send the same coin to 2 different recipients before the nodes can spot the fraud
+ - [x] the attacker sends the coin to a recipient in exchange for a consideration, then waits to receive the consideration, then builds a fork that does not contain the previous transaction and that is still acceptable to the network
  - [ ] the attacker sends the coin to a recipient in exchange for a consideration, then waits to receive the consideration, then sends another transaction to cancel the first transaction
 
 #### 1.27. Select all statements that are true for Proof-of-Work
@@ -139,8 +139,8 @@ This sections covers the underlying theory of how blockchain technology works. Q
 
 #### 1.28. What is an uncle, a.k.a. ommer?
  - [ ] an uncle is a block that contains specific information that identifies it as an uncle
- - [x] an uncle is a block that failed to be identified as the parent of another block
- - [ ] an uncle is a block that is referenced by another one according to certain criteria
+ - [ ] an uncle is a block that failed to be identified as the parent of another block
+ - [x] an uncle is a block that is referenced by another one according to certain criteria
 
 #### 1.29. What is the difficulty in a blockchain network?
  - [x] The difficulty determines how likely it is for a miner to find a valid block
