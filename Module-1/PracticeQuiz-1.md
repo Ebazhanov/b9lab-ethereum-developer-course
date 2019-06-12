@@ -26,9 +26,9 @@
  
 ### 5. What is the double-spend problem within Bitcoin?
  
- - [x] someone sends 2 different transactions at the same time to the network, in order to send the same 
+ - [ ] someone sends 2 different transactions at the same time to the network, in order to send the same 
  coin to 2 different recipients before the nodes can spot the fraud /CORRECT/
- - [ ] someone sends the coin to a recipient in exchange for a consideration, then waits to receive the consideration, 
+ - [x] someone sends the coin to a recipient in exchange for a consideration, then waits to receive the consideration, 
  then it just so happens that the consensus switches to a fork that does not contain the previous transaction
  - [ ] someone sends the coin to a recipient in exchange for a consideration, then waits to receive the consideration, 
  then builds a fork that does not contain the previous transaction and that is acceptable to the network
@@ -38,5 +38,5 @@
 ### 6. What is an uncle, a.k.a. ommer?
  
  - [ ] an uncle is a block that contains specific information that identifies it as an uncle
- - [x] an uncle is a block that failed to be identified as the parent of another block /CORRECT ???/
- - [ ] an uncle is a block that is referenced by another one according to certain criteria, except as a parent or a parent lineage.
+ - [ ] an uncle is a block that failed to be identified as the parent of another block /CORRECT ???/
+ - [x] an uncle is a block that is referenced by another one according to certain criteria, except as a parent or a parent lineage.
