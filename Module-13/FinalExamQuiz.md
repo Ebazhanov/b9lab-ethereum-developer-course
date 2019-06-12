@@ -185,60 +185,60 @@ SOLIDITY BASICS
 ***************
 #### 3.1. In Solidity, what member of the address type returns the balance of the associated account?
  - [ ] address.amount
- - [ ] address.balance
+ - [x] address.balance
  
 #### 3.2. Which data types are of fixed size?
  - [ ] uint
- - [ ] uint128
+ - [x] uint128
  - [ ] bytes
- - [ ] bytes32
+ - [x] bytes32
  - [ ] string
  
 #### 3.3. What is the correct syntax for inheriting from a contract?
 Assume a contract named MetaCoin exists
  - [ ] `contract NewCoin => MetaCoin {}`
- - [ ] `contract NewCoin is MetaCoin {}`
+ - [x] `contract NewCoin is MetaCoin {}`
  - [ ] `contract NewCoin inherits MetaCoin {}`
  
 #### 3.4. How do you attach value as part of a function call within Solidity
- - [ ] `myContract.myFunction.value(1 ether)(arg1)`
+ - [x] `myContract.myFunction.value(1 ether)(arg1)`
  - [ ] `myContract.myFunction(arg1, {value: 1 ether})`
  
 #### 3.5. In Solidity, how is Ether typically sent?
  - [ ] `transfer(address)`
- - [ ] `address.transfer`
+ - [x] `address.transfer`
  
 #### 3.6. In Solidity, how can a function call the fallback function of a remote contract instance, in the context of the remote contract instance?
  - [ ] `address.delegatecall("")`
- - [ ] `address.call("")`
+ - [x] `address.call("")`
  - [ ] `address.send(123)`
  - [ ] `address.transfer(123)`
  
 #### 3.7. In Solidity, which of the following are fixed array types?
  - [ ] `bytes`
- - [ ] `bytes1`
+ - [x] `bytes1`
  - [ ] `bytes32`
  
 #### 3.8. What is the `struct` type?
  - [ ] Struct is an array type
- - [ ] Struct is a reference type
+ - [x] Struct is a reference type
  
 #### 3.9. What is the correct syntax to declare an array of unsigned integers?
  - [ ] `uint numbers[];`
  - [ ] `array[uint] numbers;`
- - [ ] `uint[] numbers;`
+ - [x] `uint[] numbers;`
  
 #### 3.10. What is the difference between an array stored in memory and an array stored in storage?
  - [ ] Arrays in memory are more limited in size
- - [ ] Storage arrays cost more gas because storage operations increase the size of the state database
+ - [x] Storage arrays cost more gas because storage operations increase the size of the state database
  
 #### 3.11. What is the mapping type?
  - [ ] A mapping lets the developer collate disparate values
- - [ ] A mapping acts like a table that can store or return a value when provided a key
+ - [x] A mapping acts like a table that can store or return a value when provided a key
  
 #### 3.12. How can values be found in a mapping?
  - [ ] Iterate through the mapping and find the right value
- - [ ] Values can only be found when knowing the key
+ - [x] Values can only be found when knowing the key
  - [ ] Call `myMapping.contains(value)`
  
 #### 3.13. What is the default visibility of state variables?
