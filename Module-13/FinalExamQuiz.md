@@ -161,17 +161,18 @@ This section covers the Ethereum stack specifically. This includes some question
 #### 2.1. Select all statements that apply to the Ethereum public network
  - [ ] Ethereum utilises cryptoeconomic incentives
  - [ ] Account balances are hidden on Ethereum
- - [ ] When a group or individual controls a large majority of mining power, the integrity of past blocks is not necessarily compromised
- - [ ] All you need to participate is a client and an internet connection
+ - [x]* When a group or individual controls a large majority of mining power, the integrity of past blocks is not necessarily compromised
+ - [x] All you need to participate is a client and an internet connection
  - [ ] Blocks are approved by a central clearinghouse
+* However their *finality* might be compromised.Possessing a majority of hashing power and enough time are necessary conditions for rollback (statistically), but not **sufficient**.
 
 #### 2.2. How does Ethereum protect itself against infinite loops in EVM bytecode?
- - [ ] Every computational step costs gas, a sub-currency of Ether
+ - [x] Every computational step costs gas, a sub-currency of Ether
  - [ ] The EVM only allows 1024 computational steps per call
  - [ ] Solidity does not allow for infinite loops
 
 #### 2.3. What happens if computational steps finish before all gas in a transaction is used up?
- - [ ] The remaining gas is returned to the originator of the transaction
+ - [x] The remaining gas is returned to the originator of the transaction
  - [ ] The remaining gas is transferred to the miner of the block
  - [ ] The remaining gas is destroyed
 
@@ -243,8 +244,9 @@ Assume a contract named MetaCoin exists
  
 #### 3.13. What is the default visibility of state variables?
  - [ ] private: only the contract it is declared in can see it
- - [ ] internal: only the contract it is declared in and its child contracts can see it
+ - [x]* internal: only the contract it is declared in and its child contracts can see it
  - [ ] public: all can access it
+ *Functions are public by default
  
 FUNCTIONS
 ---------
@@ -252,7 +254,7 @@ FUNCTIONS
 #### 4.1. Which of the following function declarations is correct?
  - [ ] `function sendCoin(uint amount) adminOnly() internal external returns(bool decision) {}`
  - [ ] `function sendCoin {}`
- - [ ] `function sendCoin(uint amount) adminOnly() internal returns(bool decision) {}`
+ - [x] `function sendCoin(uint amount) adminOnly() internal returns(bool decision) {}`
  
 #### 4.2. Which of these coding patterns is, or are, to be avoided?
  - [ ] looping through an array of addresses to send value to each of the addresses
