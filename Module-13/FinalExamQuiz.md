@@ -161,10 +161,10 @@ This section covers the Ethereum stack specifically. This includes some question
 #### 2.1. Select all statements that apply to the Ethereum public network
  - [ ] Ethereum utilises cryptoeconomic incentives
  - [ ] Account balances are hidden on Ethereum
- - [x]* When a group or individual controls a large majority of mining power, the integrity of past blocks is not necessarily compromised
+ - [x] *When a group or individual controls a large majority of mining power, the integrity of past blocks is not necessarily compromised
  - [x] All you need to participate is a client and an internet connection
  - [ ] Blocks are approved by a central clearinghouse
-* However their *finality* might be compromised.Possessing a majority of hashing power and enough time are necessary conditions for rollback (statistically), but not **sufficient**.
+*However their **finality** might be compromised.Possessing a majority of hashing power and enough time are necessary conditions for rollback (statistically), but not **sufficient**.
 
 #### 2.2. How does Ethereum protect itself against infinite loops in EVM bytecode?
  - [x] Every computational step costs gas, a sub-currency of Ether
@@ -178,7 +178,7 @@ This section covers the Ethereum stack specifically. This includes some question
 
 #### 2.4. What is the difference between a message and a transaction in Ethereum?
  - [ ] Messages and transactions are the same thing
- - [ ] Messages are internal between contracts or accounts, transactions are messages and originate from an externally owned account
+ - [x] Messages are internal between contracts or accounts, transactions are messages and originate from an externally owned account
  - [ ] Transactions are internal between contracts or accounts, messages are transactions and originate from an externally owned account
 
 SOLIDITY BASICS
@@ -257,49 +257,49 @@ FUNCTIONS
  - [x] `function sendCoin(uint amount) adminOnly() internal returns(bool decision) {}`
  
 #### 4.2. Which of these coding patterns is, or are, to be avoided?
- - [ ] looping through an array of addresses to send value to each of the addresses
+ - [x] looping through an array of addresses to send value to each of the addresses
  - [ ] letting individual account owners call a refund function
  - [ ] sending value to an address, then flagging the transfer as done
  
 #### 4.3. What is a `constant` function?
  - [ ] A function that cannot be changed
- - [ ] A function that does not change the state of the blockchain
+ - [x] A function that does not change the state of the blockchain
  - [ ] A function that returns the same value every time
  
 #### 4.4. How can the timestamp of the current block be acquired?
  - [ ] `block.stamp`
  - [ ] `timestamp`
- - [ ] `block.timestamp`
+ - [x] `block.timestamp`
  
 #### 4.5. What is the difference between `msg.sender` and `tx.origin`?
  - [ ] They are the same
  - [ ] `msg.sender` shows the originator of the current function call, `tx.origin` is the sender of the outermost transaction
- - [ ] `tx.origin` shows the originator of the current function call, `msg.sender` is the sender of the outermost transaction
+ - [x] `tx.origin` shows the originator of the current function call, `msg.sender` is the sender of the outermost transaction
  
 #### 4.6. What variable holds the value of the current message?
  - [ ] `tx.value`
  - [ ] `block.value`
- - [ ] `msg.value`
+ - [x] `msg.value`
  
 #### 4.7. What effect does calling `revert()` have on code execution?
- - [ ] it stops the execution of the transaction
+ - [x] it stops the execution of the transaction
  - [ ] it pauses the execution of the transaction
  
 #### 4.8. When calling `revert()`, what happens to steps executed so far?
  - [ ] The state is preserved as per the time of revert()
  - [ ] The state is rolled back to before the last function call
- - [ ] The state is rolled back to before the transaction
+ - [x] The state is rolled back to before the transaction
 #### 4.9. As of Byzantium, when calling `revert()`, what happens to the gas included in the function call?
- - [ ] All remaining gas is returned to the caller
+ - [x] All remaining gas is returned to the caller
  - [ ] All remaining gas is collected by the miner
  - [ ] All remaining gas is forever lost
  
 #### 4.10. Under what circumstances can structs be returned from a function call?
- - [ ] Struct types can only be returned on internal function calls, and publicly from v0.4.17, with the experimental ABI encoder.
+ - [x] Struct types can only be returned on internal function calls, and publicly from v0.4.17, with the experimental ABI encoder.
  - [ ] Struct types can always be returned from function calls
  
 #### 4.11. What is a function modifier?
- - [ ] A code fragment that can be attached to functions
+ - [x] A code fragment that can be attached to functions
  - [ ] A piece of executable code that does not consume gas
  - [ ] A transaction that lets the owner change the code of a function
 ```javascript
@@ -319,66 +319,66 @@ FUNCTIONS
     }
 ```
 #### 4.12. In the example above, if `pay()` is called, when is the modifier `onlyMe()` executed?
- - [ ] Before the function body of `pay()`
+ - [x] Before the function body of `pay()`
  - [ ] After the function body of `pay()`
  
 #### 4.13. Select the correct syntax to declare a function modifier called `onlyAdmin`
- - [ ] `modifier onlyAdmin { }`
+ - [x] `modifier onlyAdmin { }`
  - [ ] `onlyAdmin modifier { }`
  - [ ] `modifier_onlyAdmin { }`
  
 #### 4.14. How is the `onlyAdmin` modifier attached to a function?
- - [ ] `function widthdraw() onlyAdmin() { }`
+ - [x] `function widthdraw() onlyAdmin() { }`
  - [ ] `function onlyAdmin withdraw() { }`
  - [ ] `modifier withdraw() onlyAdmin() { }`
  
 #### 4.15. What is the default accessibility setting of a function?
  - [ ] Functions are hidden by default, which means they are not stored on the blockchain
  - [ ] Functions are public by default, which means they can be called from anywhere
- - [ ] Functions are internal by default, which means they can be only be called internally
+ - [x] Functions are internal by default, which means they can be only be called internally
  
 #### 4.16. What is the most detailed, and accurate, syntax to deploy a contract from within another contract. Assume a contract named `MetaCoin` has been imported
  - [ ] `address m = new MetaCoin();`
  - [ ] `MetaCoin m = new MetaCoin();`
- - [ ] `Contract m = new MetaCoin();`
+ - [x] `Contract m = new MetaCoin();`
  
 #### 4.17. What is the correct syntax for declaring a constant variable?
- - [ ] `address constant m;`
+ - [x] `address constant m;`
  - [ ] `constant address m;`
  - [ ] `address m is constant;`
  
 #### 4.18. What is the syntax for declaring the fallback function of a contract?
  - [ ] `fallback() constant {}`
  - [ ] `function _() {}`
- - [ ] `function () {}`
+ - [x] `function () {}`
  
 #### 4.19. What happens when a transaction is sent to a contract without specifying a function to execute?
  - [ ] Nothing happens
- - [ ] The fallback function is executed
+ - [x] The fallback function is executed
  - [ ] The value of the transaction is sent back to the caller
  
 #### 4.20. What happens when a transaction is sent to a contract specifying a function to execute that does not exist in the contract?
  - [ ] Nothing happens
- - [ ] The fallback function is executed
+ - [x] The fallback function is executed
  - [ ] The value of the transaction is sent back to the caller
  
 #### 4.21. Using the Go-ethereum client, what two pieces of data are needed to start a new blockchain network other than the public network?
- - [ ] a network id
+ - [x] a network id
  - [ ] an enode id
  - [ ] a blockchain key
- - [ ] a genesis block file
+ - [x] a genesis block file
  
 #### 4.22. In Go-ethereum, how is a node identified?
  - [ ] Every running Geth is identifiable by a private key
  - [ ] Every running Geth is identifiable by a URL
- - [ ] Every running Geth is identifiable by an enode id
+ - [x] Every running Geth is identifiable by an enode id
  
 CONTRACTS
 ---------
 *********
 #### 5.1. How is a new contract deployed on an Ethereum blockchain?
  - [ ] At least two specially crafted transaction are sent
- - [ ] A single, specially crafted transaction is sent
+ - [x] A single, specially crafted transaction is sent
  - [ ] Another contract is duplicated and overwritten
  
 #### 5.2. How can a contract be identified?
