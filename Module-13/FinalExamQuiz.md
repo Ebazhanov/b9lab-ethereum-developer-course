@@ -383,28 +383,28 @@ CONTRACTS
  
 #### 5.2. How can a contract be identified?
  - [ ] A contract is uniquely identifiable by its name
- - [ ] A contract is uniquely identifiable by its signature
+ - [x] A contract is uniquely identifiable by its signature
  - [ ] A contract is uniquely identifiable by its immutable address
  
 #### 5.3. Can the same contract code with the same name be deployed more than once on an Ethereum blockchain?
  - [ ] No, every contract can only be deployed once
- - [ ] Yes, the unique identifier is the address, not the name
+ - [x] Yes, the unique identifier is the address, not the name
  - [ ] Yes, but only from another account
  
 #### 5.4. In what form is a contract's code stored on the blockchain?
  - [ ] Solidity
  - [ ] Ethereum Java
- - [ ] EVM Bytecode
+ - [x] EVM Bytecode
  
 #### 5.5. What is the ABI of a contract?
- - [ ] The ABI describes the functions and fields of the contract
+ - [x] The ABI describes the functions and fields of the contract
  - [ ] The ABI describes the bytecode of a contract
  - [ ] The ABI describes the local node client interface
  
 #### 5.6. What is an event?
  - [ ] a function with a single parameter
  - [ ] what is sent when a function call failed
- - [ ] a way for the contract to inform outsiders about the transaction processing status
+ - [x] a way for the contract to inform outsiders about the transaction processing status
  - [ ] a way to push data into the contract
  
 #### 5.7. What is the correct syntax for defining an event?
