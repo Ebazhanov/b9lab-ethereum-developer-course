@@ -4,7 +4,8 @@
 Blockchain Theory
 -----------------
 *****************
-This sections covers the underlying theory of how blockchain technology works. Questions with radio buttons have one answer, questions with checkboxes may have more than one correct answer.
+This sections covers the underlying theory of how blockchain technology works. 
+Questions with radio buttons have one answer, questions with checkboxes may have more than one correct answer.
 
 #### 1.1. In the context of blockchain, what is the most fundamental definition of a transaction?
  - [ ] A transmission of a message between nodes
@@ -112,7 +113,7 @@ This sections covers the underlying theory of how blockchain technology works. Q
  - [ ] Signatures of all senders of transactions
  
 #### 1.23. Where is the Merkle root used in the context of blockchain?
- - [x] The genesis block
+ - [x] The genesis block [My Choice]
  - [x] The root hash of a Merkle tree containing all transactions in a block
  - [ ] The root hash of a Merkle tree of all previous blocks
  
