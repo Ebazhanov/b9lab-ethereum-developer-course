@@ -409,32 +409,32 @@ CONTRACTS
  
 #### 5.7. What is the correct syntax for defining an event?
  - [ ] function LogTrigger(address sender) event;
- - [ ] event LogTrigger(address sender);
+ - [x] event LogTrigger(address sender);
  - [ ] LogTrigger(address sender);
  
 #### 5.8. What is the lifetime of an event?
  - [ ] 2016 blocks
  - [ ] Permanent, unless there is a fork reorganisation and it is on the discarded fork
- - [ ] Permanent
+ - [x] Permanent
  - [ ] User-defined
  
 WEB3
 ----
 - - - - 
 #### 6.1. Select all correct web3.js v0.20.x calls that send a transaction to a non-constant (neither `view` nor `pure`) function called `sendCoin` in a contract named `MetaCoin`. Assume that `metacoin = web3.eth.contract(metacoinABI).at(metacoinAddress)` has been executed successfully.
- - [ ] `metacoin.sendCoin.sendTransaction(web3.eth.accounts[1], {from: web3.eth.coinbase, gas: 60000});`
+ - [x] `metacoin.sendCoin.sendTransaction(web3.eth.accounts[1], {from: web3.eth.coinbase, gas: 60000});`
  - [ ] `metacoin.sendCoin(web3.eth.accounts[1], {from: web3.eth.coinbase, gas: 60000});`
  - [ ] `metacoin.sendCoin.call(web3.eth.accounts[1], {from: web3.eth.coinbase, gas: 60000});`
  
 #### 6.2. Select all correct web3.js v0.20.x calls that call, without a transaction, a constant (`view` or `pure`) function called `getBalance` in a contract named MetaCoin. Assume that `metacoin = web3.eth.contract(metacoinABI).at(metacoinAddress)` has been executed successfully.
  - [ ] `metacoin.getBalance.sendTransaction(web3.eth.accounts[1], {from: web3.eth.coinbase, gas: 60000});`
  - [ ] `metacoin.getBalance(web3.eth.accounts[1], {from: web3.eth.coinbase, gas: 60000});`
- - [ ] `metacoin.getBalance.call(web3.eth.accounts[1], {from: web3.eth.coinbase, gas: 60000});`
+ - [x] `metacoin.getBalance.call(web3.eth.accounts[1], {from: web3.eth.coinbase, gas: 60000});`
  
 #### 6.3. Select all valid statements about libraries:
  - [ ] Libraries can store data
  - [ ] Libraries can define constant variables
  - [ ] When using library-defined structures, the data is stored in the calling contract
- - [ ] Library functions can be called by contracts
+ - [x] Library functions can be called by contracts
  - [ ] Library functions can be called by other libraries
- - [ ] Libraries must be deployed again for each new contract using them
+ - [x] Libraries must be deployed again for each new contract using them
