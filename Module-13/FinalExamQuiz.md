@@ -61,8 +61,8 @@ Questions with radio buttons have one answer, questions with checkboxes may have
  - [ ] In the root of the tree
  
 #### 1.12. How is data collected from a Merkle tree?
- - [ ] The tree is traversed depth-first and data is read from each leaf
- - [x] The tree is traversed depth-first and data is read from every node
+ - [x] The tree is traversed depth-first and data is read from each leaf
+ - [ ] The tree is traversed depth-first and data is read from every node
  - [ ] The data is extracted from the merkle root
  
 #### 1.13. What is a node in a Merkle Tree?
@@ -124,13 +124,13 @@ Questions with radio buttons have one answer, questions with checkboxes may have
  
 #### 1.25. How does a hashtable, whose keys are hashed from the values, compare to a table whose content is indexed by arbitrary id? Select all correct statements.
  - [ ] a table indexed by arbitrary id is faster to read
- - [ ] a table indexed by hash allows incorporation of checks for protection from error and malice, unlike one by arbitrary id
- - [x] a table indexed by hash can grow much larger than one by arbitrary id
+ - [x] a table indexed by hash allows incorporation of checks for protection from error and malice, unlike one by arbitrary id
+ - [ ] a table indexed by hash can grow much larger than one by arbitrary id
  - [x] a table indexed by arbitrary id can hold duplicate values, unlike one by hash
  
 #### 1.26. What is the double-spend attack within Bitcoin?
- - [x] the attacker sends 2 different transactions at the same time to the network, in order to send the same coin to 2 different recipients before the nodes can spot the fraud
- - [ ] the attacker sends the coin to a recipient in exchange for a consideration, then waits to receive the consideration, then builds a fork that does not contain the previous transaction and that is still acceptable to the network
+ - [ ] the attacker sends 2 different transactions at the same time to the network, in order to send the same coin to 2 different recipients before the nodes can spot the fraud
+ - [x] the attacker sends the coin to a recipient in exchange for a consideration, then waits to receive the consideration, then builds a fork that does not contain the previous transaction and that is still acceptable to the network
  - [ ] the attacker sends the coin to a recipient in exchange for a consideration, then waits to receive the consideration, then sends another transaction to cancel the first transaction
 
 #### 1.27. Select all statements that are true for Proof-of-Work
@@ -140,8 +140,8 @@ Questions with radio buttons have one answer, questions with checkboxes may have
 
 #### 1.28. What is an uncle, a.k.a. ommer?
  - [ ] an uncle is a block that contains specific information that identifies it as an uncle
- - [x] an uncle is a block that failed to be identified as the parent of another block
- - [ ] an uncle is a block that is referenced by another one according to certain criteria
+ - [ ] an uncle is a block that failed to be identified as the parent of another block
+ - [x] an uncle is a block that is referenced by another one according to certain criteria
 
 #### 1.29. What is the difficulty in a blockchain network?
  - [x] The difficulty determines how likely it is for a miner to find a valid block
@@ -162,23 +162,24 @@ This section covers the Ethereum stack specifically. This includes some question
 #### 2.1. Select all statements that apply to the Ethereum public network
  - [ ] Ethereum utilises cryptoeconomic incentives
  - [ ] Account balances are hidden on Ethereum
- - [ ] When a group or individual controls a large majority of mining power, the integrity of past blocks is not necessarily compromised
- - [ ] All you need to participate is a client and an internet connection
+ - [x] *When a group or individual controls a large majority of mining power, the integrity of past blocks is not necessarily compromised
+ - [x] All you need to participate is a client and an internet connection
  - [ ] Blocks are approved by a central clearinghouse
+*However their **finality** might be compromised.Possessing a majority of hashing power and enough time are necessary conditions for rollback (statistically), but not **sufficient**.
 
 #### 2.2. How does Ethereum protect itself against infinite loops in EVM bytecode?
- - [ ] Every computational step costs gas, a sub-currency of Ether
+ - [x] Every computational step costs gas, a sub-currency of Ether
  - [ ] The EVM only allows 1024 computational steps per call
  - [ ] Solidity does not allow for infinite loops
 
 #### 2.3. What happens if computational steps finish before all gas in a transaction is used up?
- - [ ] The remaining gas is returned to the originator of the transaction
+ - [x] The remaining gas is returned to the originator of the transaction
  - [ ] The remaining gas is transferred to the miner of the block
  - [ ] The remaining gas is destroyed
 
 #### 2.4. What is the difference between a message and a transaction in Ethereum?
  - [ ] Messages and transactions are the same thing
- - [ ] Messages are internal between contracts or accounts, transactions are messages and originate from an externally owned account
+ - [x] Messages are internal between contracts or accounts, transactions are messages and originate from an externally owned account
  - [ ] Transactions are internal between contracts or accounts, messages are transactions and originate from an externally owned account
 
 SOLIDITY BASICS
@@ -186,66 +187,67 @@ SOLIDITY BASICS
 ***************
 #### 3.1. In Solidity, what member of the address type returns the balance of the associated account?
  - [ ] address.amount
- - [ ] address.balance
+ - [x] address.balance
  
 #### 3.2. Which data types are of fixed size?
  - [ ] uint
- - [ ] uint128
+ - [x] uint128
  - [ ] bytes
- - [ ] bytes32
+ - [x] bytes32
  - [ ] string
  
 #### 3.3. What is the correct syntax for inheriting from a contract?
 Assume a contract named MetaCoin exists
  - [ ] `contract NewCoin => MetaCoin {}`
- - [ ] `contract NewCoin is MetaCoin {}`
+ - [x] `contract NewCoin is MetaCoin {}`
  - [ ] `contract NewCoin inherits MetaCoin {}`
  
 #### 3.4. How do you attach value as part of a function call within Solidity
- - [ ] `myContract.myFunction.value(1 ether)(arg1)`
+ - [x] `myContract.myFunction.value(1 ether)(arg1)`
  - [ ] `myContract.myFunction(arg1, {value: 1 ether})`
  
 #### 3.5. In Solidity, how is Ether typically sent?
  - [ ] `transfer(address)`
- - [ ] `address.transfer`
+ - [x] `address.transfer`
  
 #### 3.6. In Solidity, how can a function call the fallback function of a remote contract instance, in the context of the remote contract instance?
  - [ ] `address.delegatecall("")`
- - [ ] `address.call("")`
+ - [x] `address.call("")`
  - [ ] `address.send(123)`
  - [ ] `address.transfer(123)`
  
 #### 3.7. In Solidity, which of the following are fixed array types?
  - [ ] `bytes`
- - [ ] `bytes1`
+ - [x] `bytes1`
  - [ ] `bytes32`
  
 #### 3.8. What is the `struct` type?
  - [ ] Struct is an array type
- - [ ] Struct is a reference type
+ - [x] Struct is a reference type
  
 #### 3.9. What is the correct syntax to declare an array of unsigned integers?
  - [ ] `uint numbers[];`
  - [ ] `array[uint] numbers;`
- - [ ] `uint[] numbers;`
+ - [x] `uint[] numbers;`
  
 #### 3.10. What is the difference between an array stored in memory and an array stored in storage?
  - [ ] Arrays in memory are more limited in size
- - [ ] Storage arrays cost more gas because storage operations increase the size of the state database
+ - [x] Storage arrays cost more gas because storage operations increase the size of the state database
  
 #### 3.11. What is the mapping type?
  - [ ] A mapping lets the developer collate disparate values
- - [ ] A mapping acts like a table that can store or return a value when provided a key
+ - [x] A mapping acts like a table that can store or return a value when provided a key
  
 #### 3.12. How can values be found in a mapping?
  - [ ] Iterate through the mapping and find the right value
- - [ ] Values can only be found when knowing the key
+ - [x] Values can only be found when knowing the key
  - [ ] Call `myMapping.contains(value)`
  
 #### 3.13. What is the default visibility of state variables?
  - [ ] private: only the contract it is declared in can see it
- - [ ] internal: only the contract it is declared in and its child contracts can see it
+ - [x]* internal: only the contract it is declared in and its child contracts can see it
  - [ ] public: all can access it
+ *Functions are public by default
  
 FUNCTIONS
 ---------
@@ -253,52 +255,52 @@ FUNCTIONS
 #### 4.1. Which of the following function declarations is correct?
  - [ ] `function sendCoin(uint amount) adminOnly() internal external returns(bool decision) {}`
  - [ ] `function sendCoin {}`
- - [ ] `function sendCoin(uint amount) adminOnly() internal returns(bool decision) {}`
+ - [x] `function sendCoin(uint amount) adminOnly() internal returns(bool decision) {}`
  
 #### 4.2. Which of these coding patterns is, or are, to be avoided?
- - [ ] looping through an array of addresses to send value to each of the addresses
+ - [x] looping through an array of addresses to send value to each of the addresses
  - [ ] letting individual account owners call a refund function
  - [ ] sending value to an address, then flagging the transfer as done
  
 #### 4.3. What is a `constant` function?
  - [ ] A function that cannot be changed
- - [ ] A function that does not change the state of the blockchain
+ - [x] A function that does not change the state of the blockchain
  - [ ] A function that returns the same value every time
  
 #### 4.4. How can the timestamp of the current block be acquired?
  - [ ] `block.stamp`
  - [ ] `timestamp`
- - [ ] `block.timestamp`
+ - [x] `block.timestamp`
  
 #### 4.5. What is the difference between `msg.sender` and `tx.origin`?
  - [ ] They are the same
  - [ ] `msg.sender` shows the originator of the current function call, `tx.origin` is the sender of the outermost transaction
- - [ ] `tx.origin` shows the originator of the current function call, `msg.sender` is the sender of the outermost transaction
+ - [x] `tx.origin` shows the originator of the current function call, `msg.sender` is the sender of the outermost transaction
  
 #### 4.6. What variable holds the value of the current message?
  - [ ] `tx.value`
  - [ ] `block.value`
- - [ ] `msg.value`
+ - [x] `msg.value`
  
 #### 4.7. What effect does calling `revert()` have on code execution?
- - [ ] it stops the execution of the transaction
+ - [x] it stops the execution of the transaction
  - [ ] it pauses the execution of the transaction
  
 #### 4.8. When calling `revert()`, what happens to steps executed so far?
  - [ ] The state is preserved as per the time of revert()
  - [ ] The state is rolled back to before the last function call
- - [ ] The state is rolled back to before the transaction
+ - [x] The state is rolled back to before the transaction
 #### 4.9. As of Byzantium, when calling `revert()`, what happens to the gas included in the function call?
- - [ ] All remaining gas is returned to the caller
+ - [x] All remaining gas is returned to the caller
  - [ ] All remaining gas is collected by the miner
  - [ ] All remaining gas is forever lost
  
 #### 4.10. Under what circumstances can structs be returned from a function call?
- - [ ] Struct types can only be returned on internal function calls, and publicly from v0.4.17, with the experimental ABI encoder.
+ - [x] Struct types can only be returned on internal function calls, and publicly from v0.4.17, with the experimental ABI encoder.
  - [ ] Struct types can always be returned from function calls
  
 #### 4.11. What is a function modifier?
- - [ ] A code fragment that can be attached to functions
+ - [x] A code fragment that can be attached to functions
  - [ ] A piece of executable code that does not consume gas
  - [ ] A transaction that lets the owner change the code of a function
 ```javascript
@@ -318,122 +320,122 @@ FUNCTIONS
     }
 ```
 #### 4.12. In the example above, if `pay()` is called, when is the modifier `onlyMe()` executed?
- - [ ] Before the function body of `pay()`
+ - [x] Before the function body of `pay()`
  - [ ] After the function body of `pay()`
  
 #### 4.13. Select the correct syntax to declare a function modifier called `onlyAdmin`
- - [ ] `modifier onlyAdmin { }`
+ - [x] `modifier onlyAdmin { }`
  - [ ] `onlyAdmin modifier { }`
  - [ ] `modifier_onlyAdmin { }`
  
 #### 4.14. How is the `onlyAdmin` modifier attached to a function?
- - [ ] `function widthdraw() onlyAdmin() { }`
+ - [x] `function widthdraw() onlyAdmin() { }`
  - [ ] `function onlyAdmin withdraw() { }`
  - [ ] `modifier withdraw() onlyAdmin() { }`
  
 #### 4.15. What is the default accessibility setting of a function?
  - [ ] Functions are hidden by default, which means they are not stored on the blockchain
  - [ ] Functions are public by default, which means they can be called from anywhere
- - [ ] Functions are internal by default, which means they can be only be called internally
+ - [x] Functions are internal by default, which means they can be only be called internally
  
 #### 4.16. What is the most detailed, and accurate, syntax to deploy a contract from within another contract. Assume a contract named `MetaCoin` has been imported
  - [ ] `address m = new MetaCoin();`
  - [ ] `MetaCoin m = new MetaCoin();`
- - [ ] `Contract m = new MetaCoin();`
+ - [x] `Contract m = new MetaCoin();`
  
 #### 4.17. What is the correct syntax for declaring a constant variable?
- - [ ] `address constant m;`
+ - [x] `address constant m;`
  - [ ] `constant address m;`
  - [ ] `address m is constant;`
  
 #### 4.18. What is the syntax for declaring the fallback function of a contract?
  - [ ] `fallback() constant {}`
  - [ ] `function _() {}`
- - [ ] `function () {}`
+ - [x] `function () {}`
  
 #### 4.19. What happens when a transaction is sent to a contract without specifying a function to execute?
  - [ ] Nothing happens
- - [ ] The fallback function is executed
+ - [x] The fallback function is executed
  - [ ] The value of the transaction is sent back to the caller
  
 #### 4.20. What happens when a transaction is sent to a contract specifying a function to execute that does not exist in the contract?
  - [ ] Nothing happens
- - [ ] The fallback function is executed
+ - [x] The fallback function is executed
  - [ ] The value of the transaction is sent back to the caller
  
 #### 4.21. Using the Go-ethereum client, what two pieces of data are needed to start a new blockchain network other than the public network?
- - [ ] a network id
+ - [x] a network id
  - [ ] an enode id
  - [ ] a blockchain key
- - [ ] a genesis block file
+ - [x] a genesis block file
  
 #### 4.22. In Go-ethereum, how is a node identified?
  - [ ] Every running Geth is identifiable by a private key
  - [ ] Every running Geth is identifiable by a URL
- - [ ] Every running Geth is identifiable by an enode id
+ - [x] Every running Geth is identifiable by an enode id
  
 CONTRACTS
 ---------
 *********
 #### 5.1. How is a new contract deployed on an Ethereum blockchain?
  - [ ] At least two specially crafted transaction are sent
- - [ ] A single, specially crafted transaction is sent
+ - [x] A single, specially crafted transaction is sent
  - [ ] Another contract is duplicated and overwritten
  
 #### 5.2. How can a contract be identified?
  - [ ] A contract is uniquely identifiable by its name
- - [ ] A contract is uniquely identifiable by its signature
+ - [x] A contract is uniquely identifiable by its signature
  - [ ] A contract is uniquely identifiable by its immutable address
  
 #### 5.3. Can the same contract code with the same name be deployed more than once on an Ethereum blockchain?
  - [ ] No, every contract can only be deployed once
- - [ ] Yes, the unique identifier is the address, not the name
+ - [x] Yes, the unique identifier is the address, not the name
  - [ ] Yes, but only from another account
  
 #### 5.4. In what form is a contract's code stored on the blockchain?
  - [ ] Solidity
  - [ ] Ethereum Java
- - [ ] EVM Bytecode
+ - [x] EVM Bytecode
  
 #### 5.5. What is the ABI of a contract?
- - [ ] The ABI describes the functions and fields of the contract
+ - [x] The ABI describes the functions and fields of the contract
  - [ ] The ABI describes the bytecode of a contract
  - [ ] The ABI describes the local node client interface
  
 #### 5.6. What is an event?
  - [ ] a function with a single parameter
  - [ ] what is sent when a function call failed
- - [ ] a way for the contract to inform outsiders about the transaction processing status
+ - [x] a way for the contract to inform outsiders about the transaction processing status
  - [ ] a way to push data into the contract
  
 #### 5.7. What is the correct syntax for defining an event?
  - [ ] function LogTrigger(address sender) event;
- - [ ] event LogTrigger(address sender);
+ - [x] event LogTrigger(address sender);
  - [ ] LogTrigger(address sender);
  
 #### 5.8. What is the lifetime of an event?
  - [ ] 2016 blocks
  - [ ] Permanent, unless there is a fork reorganisation and it is on the discarded fork
- - [ ] Permanent
+ - [x] Permanent
  - [ ] User-defined
  
 WEB3
 ----
 - - - - 
 #### 6.1. Select all correct web3.js v0.20.x calls that send a transaction to a non-constant (neither `view` nor `pure`) function called `sendCoin` in a contract named `MetaCoin`. Assume that `metacoin = web3.eth.contract(metacoinABI).at(metacoinAddress)` has been executed successfully.
- - [ ] `metacoin.sendCoin.sendTransaction(web3.eth.accounts[1], {from: web3.eth.coinbase, gas: 60000});`
+ - [x] `metacoin.sendCoin.sendTransaction(web3.eth.accounts[1], {from: web3.eth.coinbase, gas: 60000});`
  - [ ] `metacoin.sendCoin(web3.eth.accounts[1], {from: web3.eth.coinbase, gas: 60000});`
  - [ ] `metacoin.sendCoin.call(web3.eth.accounts[1], {from: web3.eth.coinbase, gas: 60000});`
  
 #### 6.2. Select all correct web3.js v0.20.x calls that call, without a transaction, a constant (`view` or `pure`) function called `getBalance` in a contract named MetaCoin. Assume that `metacoin = web3.eth.contract(metacoinABI).at(metacoinAddress)` has been executed successfully.
  - [ ] `metacoin.getBalance.sendTransaction(web3.eth.accounts[1], {from: web3.eth.coinbase, gas: 60000});`
  - [ ] `metacoin.getBalance(web3.eth.accounts[1], {from: web3.eth.coinbase, gas: 60000});`
- - [ ] `metacoin.getBalance.call(web3.eth.accounts[1], {from: web3.eth.coinbase, gas: 60000});`
+ - [x] `metacoin.getBalance.call(web3.eth.accounts[1], {from: web3.eth.coinbase, gas: 60000});`
  
 #### 6.3. Select all valid statements about libraries:
  - [ ] Libraries can store data
  - [ ] Libraries can define constant variables
  - [ ] When using library-defined structures, the data is stored in the calling contract
- - [ ] Library functions can be called by contracts
+ - [x] Library functions can be called by contracts
  - [ ] Library functions can be called by other libraries
- - [ ] Libraries must be deployed again for each new contract using them
+ - [x] Libraries must be deployed again for each new contract using them
