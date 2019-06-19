@@ -1,5 +1,5 @@
 ### 1. Why is Solidity the currently preferred language?
-  - [ ] There is no real reason.
+  - [x] There is no real reason.
   - [x] It is well supported.
   - [x] It is better than the alternatives.
   
