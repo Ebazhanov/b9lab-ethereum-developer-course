@@ -18,18 +18,19 @@
   - [x] c. bytes8
   - [x] d. bytes32
   - [ ] e. bytes134
-  - [ ] f. bytes256
+  - [x] f. bytes256
   - [ ] g. bytes512
   
 ### 4. Preventing a wrap-around when manipulating large numbers. Here, add `uint a;` and `uint b;`
  - [x] Write the code for that, then check your answer with the explanation after you click Show Answer.
 
-```uint a;
-   uint b;
-   uint sum = a + b;
-   if (sum < a || sum < b) {
-       // Handle error
-   }
+*Use SAFEMATH library*
+```
+function add(uint256 a, uint256 b) internal pure returns (uint256) {
+    uint256 c = a + b;
+    assert(c >= a);
+    return c;
+  }
 ```
 
 ### 5. What can you use struct for?
@@ -80,8 +81,8 @@ mapping (bytes32 => Student) students;
 mapping (bytes32 => uint8) studentAges;
 mapping (bytes32 => bytes31) studentNames;
 ```
-- [x] A
-- [ ] B
+- [ ] A
+- [x] B
 - [ ] Storage is laid out differently although there is no difference in storage consumption.
 - [ ] There is no difference either in storage layout or in storage consumption.
 
@@ -107,10 +108,10 @@ uint8 ageAlice;
 bytes31 nameAlice;
 ```
 
-- [x] A
+- [ ] A
 - [ ] B
 - [ ] Storage is laid out differently although there is no difference in storage consumption.
-- [ ] There is no difference either in storage layout or in storage consumption.
+- [x] There is no difference either in storage layout or in storage consumption.
 
 ```
 EXPLANATION
