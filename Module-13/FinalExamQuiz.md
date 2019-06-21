@@ -58,13 +58,13 @@ Questions with radio buttons have one answer, questions with checkboxes may have
  - [x] Yes
  
 #### 1.11. Where is data stored in a Merkle Tree?
- - [x] In each node of the tree
- - [ ] In the leaves of the tree
+ - [ ] In each node of the tree
+ - [x] In the leaves of the tree
  - [ ] In the root of the tree
  
 #### 1.12. How is data collected from a Merkle tree?
- - [x] The tree is traversed depth-first and data is read from each leaf
- - [ ] The tree is traversed depth-first and data is read from every node
+ - [ ] The tree is traversed depth-first and data is read from each leaf
+ - [x] The tree is traversed depth-first and data is read from every node
  - [ ] The data is extracted from the merkle root
  
 #### 1.13. What is a node in a Merkle Tree?
@@ -94,8 +94,8 @@ Questions with radio buttons have one answer, questions with checkboxes may have
  - [x] A one-time word that is varied by the miner to achieve different hashes
 
 #### 1.19. In the ethash and hashcash Proof-of-Work consensus algorithms, what does the difficulty determine?
- - [x] The number of blocks a miner has to propose before the network accepts one
- - [ ] The number of leading zeros required in a block hash calculation required for a valid block
+ - [ ] The number of blocks a miner has to propose before the network accepts one
+ - [x] The number of leading zeros required in a block hash calculation required for a valid block
  - [ ] The time a transaction has to remain in the transaction pool
 
 #### 1.20. What does the CAP theorem stand for?
@@ -115,7 +115,7 @@ Questions with radio buttons have one answer, questions with checkboxes may have
  - [ ] Signatures of all senders of transactions
  
 #### 1.23. Where is the Merkle root used in the context of blockchain?
- - [x] The genesis block [My Choice]
+ - [ ] The genesis block
  - [x] The root hash of a Merkle tree containing all transactions in a block
  - [ ] The root hash of a Merkle tree of all previous blocks
  
@@ -126,8 +126,8 @@ Questions with radio buttons have one answer, questions with checkboxes may have
  
 #### 1.25. How does a hashtable, whose keys are hashed from the values, compare to a table whose content is indexed by arbitrary id? Select all correct statements.
  - [ ] a table indexed by arbitrary id is faster to read
- - [x] a table indexed by hash allows incorporation of checks for protection from error and malice, unlike one by arbitrary id
- - [ ] a table indexed by hash can grow much larger than one by arbitrary id
+ - [ ] a table indexed by hash allows incorporation of checks for protection from error and malice, unlike one by arbitrary id
+ - [x] a table indexed by hash can grow much larger than one by arbitrary id
  - [x] a table indexed by arbitrary id can hold duplicate values, unlike one by hash
  
 #### 1.26. What is the double-spend attack within Bitcoin?
@@ -142,8 +142,8 @@ Questions with radio buttons have one answer, questions with checkboxes may have
 
 #### 1.28. What is an uncle, a.k.a. ommer?
  - [ ] an uncle is a block that contains specific information that identifies it as an uncle
- - [ ] an uncle is a block that failed to be identified as the parent of another block
- - [x] an uncle is a block that is referenced by another one according to certain criteria
+ - [x] an uncle is a block that failed to be identified as the parent of another block
+ - [ ] an uncle is a block that is referenced by another one according to certain criteria
 
 #### 1.29. What is the difficulty in a blockchain network?
  - [x] The difficulty determines how likely it is for a miner to find a valid block
@@ -276,8 +276,8 @@ FUNCTIONS
  
 #### 4.5. What is the difference between `msg.sender` and `tx.origin`?
  - [ ] They are the same
- - [ ] `msg.sender` shows the originator of the current function call, `tx.origin` is the sender of the outermost transaction
- - [x] `tx.origin` shows the originator of the current function call, `msg.sender` is the sender of the outermost transaction
+ - [x] `msg.sender` shows the originator of the current function call, `tx.origin` is the sender of the outermost transaction
+ - [ ] `tx.origin` shows the originator of the current function call, `msg.sender` is the sender of the outermost transaction
  
 #### 4.6. What variable holds the value of the current message?
  - [ ] `tx.value`
@@ -292,6 +292,7 @@ FUNCTIONS
  - [ ] The state is preserved as per the time of revert()
  - [ ] The state is rolled back to before the last function call
  - [x] The state is rolled back to before the transaction
+ 
 #### 4.9. As of Byzantium, when calling `revert()`, what happens to the gas included in the function call?
  - [x] All remaining gas is returned to the caller
  - [ ] All remaining gas is collected by the miner
@@ -337,13 +338,13 @@ FUNCTIONS
  
 #### 4.15. What is the default accessibility setting of a function?
  - [ ] Functions are hidden by default, which means they are not stored on the blockchain
- - [ ] Functions are public by default, which means they can be called from anywhere
- - [x] Functions are internal by default, which means they can be only be called internally
+ - [x] Functions are public by default, which means they can be called from anywhere
+ - [ ] Functions are internal by default, which means they can be only be called internally
  
 #### 4.16. What is the most detailed, and accurate, syntax to deploy a contract from within another contract. Assume a contract named `MetaCoin` has been imported
  - [ ] `address m = new MetaCoin();`
- - [ ] `MetaCoin m = new MetaCoin();`
- - [x] `Contract m = new MetaCoin();`
+ - [x] `MetaCoin m = new MetaCoin();`
+ - [ ] `Contract m = new MetaCoin();`
  
 #### 4.17. What is the correct syntax for declaring a constant variable?
  - [x] `address constant m;`
@@ -386,8 +387,8 @@ CONTRACTS
  
 #### 5.2. How can a contract be identified?
  - [ ] A contract is uniquely identifiable by its name
- - [x] A contract is uniquely identifiable by its signature
- - [ ] A contract is uniquely identifiable by its immutable address
+ - [ ] A contract is uniquely identifiable by its signature
+ - [x] A contract is uniquely identifiable by its immutable address
  
 #### 5.3. Can the same contract code with the same name be deployed more than once on an Ethereum blockchain?
  - [ ] No, every contract can only be deployed once
@@ -417,8 +418,8 @@ CONTRACTS
  
 #### 5.8. What is the lifetime of an event?
  - [ ] 2016 blocks
- - [ ] Permanent, unless there is a fork reorganisation and it is on the discarded fork
- - [x] Permanent
+ - [x] Permanent, unless there is a fork reorganisation and it is on the discarded fork
+ - [ ] Permanent
  - [ ] User-defined
  
 WEB3
