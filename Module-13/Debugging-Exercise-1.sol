@@ -36,7 +36,7 @@ contract PiggyBank {
  **ANSWER**:
  
  
- 1) no visibility specified.
+1) no visibility specified.
 Change to:  function piggyBank(bytes32 _hashedPassword) public {...}
 
 2) msg.value used in non-payble function
@@ -49,9 +49,10 @@ Change to: function () public payable {...}
 Change to: function kill(bytes32 password) public {...}
 
 5)add require statement to make sure only the creator of contract can interact
-Change to :require( msg.sender == owner);
- 
- pragma solidity 0.4.19;
+Change to: require( msg.sender == owner);
+
+
+pragma solidity 0.4.19;
 
 contract PiggyBank {
     address owner;
