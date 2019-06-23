@@ -34,8 +34,8 @@ We go by the following logic.
 1.In interface all the functions do not have an implementation.
 To do so we add "is" to "contract Store  WarehouseI" as seen below.
 
-2. We modify functions in the interface to make them look alike.
-(adding "public returns (bool);")
+2. We modify functions in the interface: they have to be declared as external
+(adding "external returns (bool);")
 
 3.We modify interface and contract functios to make sure they look identical  (return statements).
 
@@ -44,8 +44,8 @@ To do so we add "is" to "contract Store  WarehouseI" as seen below.
 pragma solidity ^0.4.5;
 
 interface WarehouseI {
-    function setDeliveryAddress(string where) public returns (bool);
-    function ship(uint id, address customer)  public returns (bool);
+    function setDeliveryAddress(string where) external returns (bool);
+    function ship(uint id, address customer)  external returns (bool);
 }
 
 contract Store is WarehouseI {
