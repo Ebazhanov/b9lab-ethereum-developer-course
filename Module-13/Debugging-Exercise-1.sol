@@ -51,6 +51,8 @@ Change to: function kill(bytes32 password) public {...}
 5)add require statement to make sure only the creator of contract can interact
 Change to: require( msg.sender == owner);
 
+6)Function kill returns true in case of success and also requires only the creator of the contract to be the one wwho can initiate it
+
 
 pragma solidity 0.4.19;
 
@@ -70,8 +72,9 @@ contract PiggyBank {
         balance += uint248(msg.value);
     }
 
-    function kill(bytes32 password) public {
-        if (keccak256(owner, password) != hashedPassword) revert();
-        selfdestruct(owner);
+    function kill() public returns (bool){
+    require(msg.sender == owner);
+    selfdestruct(owner);
+    return true;
     }
 }
