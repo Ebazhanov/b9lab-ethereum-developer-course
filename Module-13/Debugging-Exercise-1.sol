@@ -74,6 +74,7 @@ contract PiggyBank {
 
     function kill() public returns (bool){
     require(msg.sender == owner);
+    if (keccak256(owner, hashedPassword) != hashedPassword) revert();
     selfdestruct(owner);
     return true;
     }
