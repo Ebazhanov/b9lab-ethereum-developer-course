@@ -18,7 +18,7 @@
   - [x] c. bytes8
   - [x] d. bytes32
   - [ ] e. bytes134
-  - [x] f. bytes256
+  - [ ] f. bytes256
   - [ ] g. bytes512
   
 ### 4. Preventing a wrap-around when manipulating large numbers. Here, add `uint a;` and `uint b;`
