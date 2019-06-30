@@ -34,29 +34,27 @@ contract PiggyBank {
 }
 
 
-
 /**
- * ANSWER
+ * ANSWERS:
+ *
+ * 1) no visibility specified.
+ * Change to:  function piggyBank(bytes32 _hashedPassword) public {...}
+
+ * 2) msg.value used in non-payble function
+ * Change to:  function piggyBank(bytes32 _hashedPassword) public payable {...}
+
+ * 3) no visiblity specified
+ * Change to: function () public payable {...}
+
+ * 4) no visbility specified
+ * Change to: function kill(bytes32 password) public {...}
+
+ * 5)add require statement to make sure only the creator of contract can interact
+ * Change to: require( msg.sender == owner);
+
+ * 6)Function kill returns true in case of success and also requires only the creator
+ of the contract to be the one who can initiate it
  * */
-
-
-1) no visibility specified.
-Change to:  function piggyBank(bytes32 _hashedPassword) public {...}
-
-2) msg.value used in non-payble function
-Change to:  function piggyBank(bytes32 _hashedPassword) public payable {...}
-
-3) no visiblity specified
-Change to: function () public payable {...}
-
-4) no visbility specified
-Change to: function kill(bytes32 password) public {...}
-
-5)add require statement to make sure only the creator of contract can interact
-Change to: require( msg.sender == owner);
-
-6)Function kill returns true in case of success and also requires only the creator of the contract to be the one wwho can initiate it
-
 
 pragma solidity 0.4.19;
 

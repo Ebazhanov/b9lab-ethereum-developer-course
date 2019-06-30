@@ -29,19 +29,19 @@ contract Store {
 }
 
 /**
- * ANSWER
+ * ANSWERS
+ * We go by the following logic.
+
+ * 1. In interface all the functions do not have an implementation.
+ * To do so we add "is" to "contract Store  WarehouseI" as seen below.
+
+ * 2. We modify functions in the interface: they have to be declared as public.
+
+ * 3. We modify interface and contract functions to make sure they both look identical (return statements).
+
+ * 4. public  becomes external after ^0.5.0
+ *
  * */
-
-// We go by the following logic.
-
-1.In interface all the functions do not have an implementation.
-To do so we add "is" to "contract Store  WarehouseI" as seen below.
-
-2. We modify functions in the interface: they have to be declared as public.
-
-3.We modify interface and contract functions to make sure they both look identical (return statements).
-
-4.public  becomes external after ^0.5.0
 
 
 
