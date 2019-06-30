@@ -32,10 +32,14 @@ contract PiggyBank {
         selfdestruct(owner);
     }
 }
- 
- **ANSWER**:
- 
- 
+
+
+
+/**
+ * ANSWER
+ * */
+
+
 1) no visibility specified.
 Change to:  function piggyBank(bytes32 _hashedPassword) public {...}
 

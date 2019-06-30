@@ -28,8 +28,11 @@ contract Store {
     }
 }
 
-**ANSWER**
-We go by the following logic.
+/**
+ * ANSWER
+ * */
+
+// We go by the following logic.
 
 1.In interface all the functions do not have an implementation.
 To do so we add "is" to "contract Store  WarehouseI" as seen below.
@@ -62,15 +65,15 @@ contract Store is WarehouseI {
         wallet.send(msg.value);
         return warehouse.ship(id, msg.sender);
     }
-    
+
     function setDeliveryAddress(string where) public returns (bool){
     return set;
-        
+
     }
-    
+
     function ship(uint id, address customer) public returns (bool) {
-     return handled;   
+     return handled;
     }
-    
-    
+
+
 }
