@@ -38,3 +38,26 @@ You need to submit your document in one README.md file in Markdown format, in th
 You can only do 1 git push. As soon as you git push once, you will no longer be able to push.
 
 We believe that one full page of free text is enough to describe the problems, the caveats, your doubts and your solutions.
+
+Solution:
+At the high level, smart contracts provide 
+
+Ok,so we have several players on the market.
+
+Regulator/government-this is a big question.
+This instance kills the whole idea of decentralization since all it wants is to control the legality of actions and make sure taxes are paid properly.Hopefully sooner or later it will be replaced by AI. As for now, they obviosly want to make sure no rules were violated.
+Problems:laws, compliance
+
+Road operator wants to make sure it is a well established business model: highway is functiong properly, there are no traffic jams, fare is taken, safety regulations are enforced
+Problems: succesful business model, compliance
+
+Toll booth is an unit that collects fare.We can narrow down it`s functionality to collecting payments, sending tickets to non-payers.
+Problems: payment processing
+
+Сars are another unit that gets involved in the process.For simplicity, we only take ability safely operate on highway and use scannable devices to pay for the usage.
+Problems: payment scanning, safety operation
+
+
+Payments: ussally the can be either regulated by the market or the government.In our worlsd, it can be done by the following formula set in smart contract. Every week has 2 free days, they can be  randomly chosen every week.
+Problems: how to set the fair price.
+
