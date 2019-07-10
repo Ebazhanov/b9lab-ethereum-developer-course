@@ -1,7 +1,7 @@
 // WORK IN PROGRESS
 Solution:
 
-Generally speaking, I would like to underline two aspects of the blockchain. It provides immutability of any data and it removes the middleman making the final cost much lower.
+Generally speaking, I would like to underline two aspects of the blockchain. It provides immutability of any data and it removes the middleman making the final cost much lower.Again, it is scalable, confidential and tamper-proof.
 
 Ok, so we have several players on the market.
 
