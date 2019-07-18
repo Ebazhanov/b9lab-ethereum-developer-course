@@ -1,9 +1,12 @@
 
 2 contracts:
+
 1.Regulator
+
 2.TollBoothOperator
 
 **Regulator**
+
 -keeps track of vehicle types
 -deploy new TollBoothOperator
 -collects no fees
@@ -12,6 +15,7 @@
 -the latest `type` is the valid type, even if regulator changed it
 
 **TollBoothOperator**
+
 -can be paused / resumed to pause the vehicle-facing operations. // is Pausable
 -keeps track of the regulator.
 -keeps track of the base deposit.
@@ -32,11 +36,13 @@
 4. individual toll booths
 
 **Owner of Regulator**
+
 -updates the vehicle type
 -deploys new TollboothOperators
 -unregisters TollBoothOperator
 
 **Owner of TollBoothOperator**
+
 -updates the base deposit
 -update the base price of routes
 -updates the multiplier for all vehicles
@@ -48,10 +54,12 @@ If a vehicle type has a multiplier of 0, then the road system will not let vehic
 
 
 **TollBoothOperator**
+
 -defines a base route price
 -defines a multipler for each vehicle type 
 
 **Toll**
+
 ENTER
 
 -when faced with a vehicle that wants to enter the road, toll booth confirms the
