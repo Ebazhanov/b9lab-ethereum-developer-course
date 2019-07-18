@@ -1,5 +1,4 @@
 
-**USE `SAFEMATH`**
 2 contracts:
 1.Regulator
 2.TollBoothOperator
