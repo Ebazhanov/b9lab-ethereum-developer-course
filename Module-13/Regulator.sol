@@ -7,13 +7,8 @@ contract Regulator
 {
 using SafeMath for uint256;
 
- address public regulatorOwner;
- uint vehicle;
- uint vehicle;
- uint tollbooth;
- uint entryToll;
- uint exitToll; 
- uint vehicleType;
+address public regulatorOwner;
+ 
 
     
     
