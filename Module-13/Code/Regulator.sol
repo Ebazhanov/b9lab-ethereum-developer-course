@@ -16,6 +16,9 @@ regulatorOwner = msg.sender;
         _;
     }   
 
+  //vehicles must be registered w/regulator
+  // require(msg.sender)
+
 function (bla bla bla) {
  
         }
