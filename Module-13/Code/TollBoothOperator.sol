@@ -4,24 +4,20 @@ import './Regulator.sol';
 contract TollBoothOperator{
 using SafeMath for uint256;
 
- address public TollBoothOwner;
+address public TollBoothOwner;
 
- struct vehicles {
- uint256 vehicleType0;
- uint256 vehicleType1;
- uint256 vehicleType2;
- uint256 vehicleType3;
- }
+uint256 registered=1;
 
- uint256 registered=1;
  //uint256 regulatorRegistration;
 // uint256 operatorRegistration;
 
+uint256 entryBooth;
+uint256 exitBooth;
 
- uint256 entryBooth;
- uint256 exitBooth;
+uint256 basePrice=10;
+uint256 registered=1;
 
- uint256 basePrice=10;
+string[4] memory Vehicles [ "vehicleType0", "vehicleType1", "vehicleType2", "vehicleType4"];
 
 
 
@@ -34,7 +30,7 @@ require(msg.sender == TollBoothOwner, "Only executable by owner");
         _;
    } 
 
-}
+
 function finalPrice(uint25 ...vehicleType) public  returns(uint) {
 
         if(vehicleType == vehicleType0 ) {
@@ -48,11 +44,29 @@ function finalPrice(uint25 ...vehicleType) public  returns(uint) {
         return (basePrice ** 4); 
         }
 
-    }
- 
-function registeredVehicle (uint registered) {
- 
-if (registered) == 1
+function checkRegistration (uint256 registered) {
+for (uint i = 0; i < Vehicles.length; i++)	
 
-   }
+
+}
+
+}
+        
+    
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 
