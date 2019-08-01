@@ -3,8 +3,10 @@ import "./SafeMath.sol";
 import './ToolBoothOperator.sol';
 
 
-contract Regulator{
+contract Regulator {
+
 using SafeMath for uint256;
+
 address public regulatorOwner;
  
 constructor() internal {
@@ -22,3 +24,4 @@ regulatorOwner = msg.sender;
 function (bla bla bla) {
  
         }
+}
