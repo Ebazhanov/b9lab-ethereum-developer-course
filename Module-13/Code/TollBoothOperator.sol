@@ -46,7 +46,7 @@ require(registered[i] == 1, "Only registered cars allowed on the road");
         _;
    } 
 
- 
+ //@dev  fee to use the road per vehicle type
 function finalPrice(uint256 ...VehicleTypes) public  returns(uint) {
 
         if(vehicleType == vehicleType0 ) {
@@ -59,17 +59,18 @@ function finalPrice(uint256 ...VehicleTypes) public  returns(uint) {
         return _fee4;
         }
 }
+//@dev checking existing car registration
 function checkRegistration (uint256 VehicleTypes) {
 for (uint i = 0; i < VehicleTypes.length; i++)
 VehicleTypes[i]==_registered;
 }
-
+//@dev deposit to enter the road
 function entryDeposit (uint256 VehicleTypes) {
 for (uint i = 0; i < VehicleTypes.length; i++)
 VehicleTypes[i]==_deposit;
 }
 
-
+//@dev deposit to be returned at exit
 function returnDeposit (uint256 VehicleTypes) public return(uint) {
 	if(vehicleType == vehicleType0 ) {
         return (initialDeposit-_fee1); 
