@@ -7,6 +7,7 @@ contract TollBoothOperator{
 using SafeMath for uint256;
 
 address public TollBoothOwner;
+mapping ()
 
 
 
@@ -45,6 +46,12 @@ modifier isRegistered() {
 require(registered[i] == 1, "Only registered cars allowed on the road");
         _;
    } 
+
+modifier hasEntryTollAddress() {
+require(registered[i] == 1, "Only registered cars allowed on the road");
+        _;
+   } 
+
 
  //@dev  fee to use the road per vehicle type
 function finalPrice(uint256 ...VehicleTypes) public  returns(uint) {
