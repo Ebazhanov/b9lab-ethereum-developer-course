@@ -2,12 +2,32 @@ pragma solidity >=0.4.25 <0.6.0;
 
 import './Regulator.sol';
 
+/// @author Sergei Stadnik <sergeisqa@gmail.com>
+/// @notice B9lab Certified Ethereum Developer Course
+
+
 contract TollBoothOperator{
 	
 using SafeMath for uint256;
 
 address public TollBoothOwner;
-mapping ()
+
+
+
+struct Results{
+address TollBooth;
+uint256 tollDeposit;
+}
+
+bool addressConfirmed;
+mapping (address => Results) public  balances;
+
+
+//checks address of the toll booth by which cars enter
+function checkAddress (address TollBooth, uint256 tollDeposit)  returns( bool addressConfirmed ) {
+var check = balances[addressConfirmed];
+balances.tollDeposit= tollDeposit;
+}
 
 
 
@@ -89,7 +109,11 @@ function returnDeposit (uint256 VehicleTypes) public return(uint) {
         return (initialDeposit-_fee4);
         }
 
-function enterToll (uint256 _initialDeposit)
+function openGate
+ (uint256 _initialDeposit) public () {
+
+
+}
 
 	
 }
