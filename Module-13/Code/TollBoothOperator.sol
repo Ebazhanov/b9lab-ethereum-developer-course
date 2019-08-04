@@ -38,6 +38,7 @@ uint256 _exitBooth;
 
 uint256 _basePrice=10;
 uint256 _registered=1;
+uint256 _isAllowedOnRoad=1;
 
 string[4] memory VehicleTypes [ "vehicleType0", "vehicleType1", "vehicleType2", "vehicleType4"];
 
@@ -68,13 +69,13 @@ require(registered[i] == 1, "Only registered cars allowed on the road");
    } 
 
 modifier hasEntryTollAddress() {
-require(registered[i] == 1, "Only registered cars allowed on the road");
+require(registered[i] == 1, "Only cars with exact entry toll address are allowed on  the road");
         _;
    } 
 
 
  //@dev  fee to use the road per vehicle type
-function finalPrice(uint256 ...VehicleTypes) public  returns(uint) {
+function entryFeePErVehicle (uint256 ...VehicleTypes) public  returns(uint) {
 
         if(vehicleType == vehicleType0 ) {
         return _fee1; 
@@ -108,12 +109,18 @@ function returnDeposit (uint256 VehicleTypes) public return(uint) {
         }  else {
         return (initialDeposit-_fee4);
         }
+//@dev conditions to enter toll gate
+function enterTollGate() public return() {
+if ((_registered[i] == 1 && (_isAllowed[i] == 1))
+	return 
 
-function openGate (uint256 _initialDeposit) public return() {
+}
+
+//@dev conditions to exit toll gate
+function  exitTollGate (uint256 _initialDeposit) public return() {
 if (( _deposit ==1) && ( addressConfirmed=true))
 return _openGate =true;
-
----------
+}
 
 
 }
