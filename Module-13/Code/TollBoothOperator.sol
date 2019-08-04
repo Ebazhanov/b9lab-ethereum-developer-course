@@ -19,9 +19,8 @@ address TollBooth;
 uint256 tollDeposit;
 }
 
-bool addressConfirmed;
 mapping (address => Results) public  balances;
-
+bool addressConfirmed=false;
 
 //checks address of the toll booth by which cars enter
 function checkAddress (address TollBooth, uint256 tollDeposit)  returns( bool addressConfirmed ) {
@@ -44,6 +43,7 @@ string[4] memory VehicleTypes [ "vehicleType0", "vehicleType1", "vehicleType2", 
 
 uint256 _initialDeposit;
 uint256 _deposit=1;
+uint256 _openGate=false;
 
 
 uint256 _fee1=(basePrice ** 1);
@@ -57,7 +57,7 @@ TollBoothOwner= msg.sender;
  }
 
 
- modifier onlyOwner() {
+modifier onlyOwner() {
 require(msg.sender == TollBoothOwner, "Only executable by owner");
         _;
    } 
@@ -109,8 +109,11 @@ function returnDeposit (uint256 VehicleTypes) public return(uint) {
         return (initialDeposit-_fee4);
         }
 
-function openGate
- (uint256 _initialDeposit) public () {
+function openGate (uint256 _initialDeposit) public return() {
+if (( _deposit ==1) && ( addressConfirmed=true))
+return _openGate =true;
+
+---------
 
 
 }
