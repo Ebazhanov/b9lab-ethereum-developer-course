@@ -13,8 +13,11 @@ using SafeMath for uint256;//надо ли что то добавлять?
 //@dev owner of the toll booth
 address public TollBoothOwner;
 
-//@dev struct for toll booth units
-//надо ли делать несколько будок?
+//@dev array for toll booth units
+uint256 [] addTollBooth;
+uint256 [] addNewFee;
+uint256 newFeeValue=2;
+
 
 struct Results{
 address TollBooth;
@@ -41,7 +44,7 @@ uint256 _registered=1;
 bool _isAllowedOnRoad=false;
 
 //@dev array for vehicle types
-string[4] memory VehicleTypes [ "vehicleType0", "vehicleType1", "vehicleType2", "vehicleType4"];
+string[4] memory VehicleTypes [ "vehicleType0", "vehicleType1", "vehicleType2", "vehicleType3"];
 
 //@dev deposits to enter/exit
 uint256 _initialDeposit;
@@ -132,6 +135,16 @@ if ((_registered[i] == 1 && (_isAllowed[i] == 1))
 	return (_isAllowedOnRoad=true);
 
 }
+
+function addBooth () constant returns(uint256[])  {
+	addTollBooth.push(1)
+	return addTollBooth;
+	
+}
+
+function addNewFee () constant returns(uint256[])  {
+	addNewFee.push(newFeeValue)
+	return addNewFee;
 
 
 
