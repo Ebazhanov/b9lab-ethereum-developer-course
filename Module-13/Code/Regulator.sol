@@ -1,6 +1,8 @@
 pragma solidity >=0.4.25 <0.6.0;
 import "./SafeMath.sol";
 import './ToolBoothOperator.sol';
+import './FinalProject.sol;
+import "./Vehicles.sol";
 
 
 contract Regulator {

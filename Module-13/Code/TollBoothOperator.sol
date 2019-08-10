@@ -1,13 +1,16 @@
 pragma solidity >=0.4.25 <0.6.0;
-
 import './Regulator.sol';
+import "./SafeMath.sol";
+import './Vehicles.sol';
+import './FinalProject.sol;
+
+
 
 /// @author Sergei Stadnik <sergeisqa@gmail.com>
 /// @notice B9lab Certified Ethereum Developer Course
 
 
 contract TollBoothOperator{
-
 using SafeMath for uint256;//надо ли что то добавлять?
 
 //@dev owner of the toll booth
