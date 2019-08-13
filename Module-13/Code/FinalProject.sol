@@ -4,9 +4,6 @@ import './ToolBoothOperator.sol';
 import './Regulator.sol';
 import './Vehicles.sol';
 
-
-
-
 contract FinalProject {
 using SafeMath for uint256;
 
