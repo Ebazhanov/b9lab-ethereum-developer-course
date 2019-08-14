@@ -10,10 +10,22 @@ import './FinalProject.sol';
 
 contract TollBoothOperator {
 
-    using SafeMath for uint256;//надо ли что то добавлять?
+    // how to use safemath?
+    using SafeMath for uint256;
+
+    //@dev all tollbooths on the road
+    struct Tollbooths {
+    uint256 boothNumber;
+    uint256 entryTollBooth;
+    uint256 exitTollBoothl
+    address boothAddress; 
+    }
+
+    mapping (uint => Tollbooths) public tollBooths;
 
     //@dev owner of the toll booth
     address public TollBoothOwner;
+
 
     //@dev array for toll booth units
     uint256 [] addTollBooth;
@@ -22,24 +34,13 @@ contract TollBoothOperator {
 
 
     struct Results {
+        
         address TollBooth;
         uint256 tollDeposit;
     }
-    //порядок имеет значение?
-    //mapping дешевле, чем array
+    
     mapping(address => Results) public  balances;
     bool tollAddressConfirmed = false;
-
-    //@dev checks the address of the toll booth by which cars enter
-    function checkTollAddress(address TollBooth, uint256 tollDeposit)  returns (bool addressConfirmed) {
-        var check = balances[addressConfirmed];
-        balances.tollDeposit = tollDeposit;
-    }
-
-    //@dev entry and exit boothes
-    uint256 _entryBooth;
-    uint256 _exitBooth;
-
 
     //@dev car is registered and allowed on the road
     uint256 _registered = 1;
@@ -55,11 +56,19 @@ contract TollBoothOperator {
     uint256 _openGate = false;
 
     //@dev price calculation per vehicle type
-    uint256 _baseFee = 10;
-    uint256 _fee1 = (baseFee ** 1);
-    uint256 _fee2 = (baseFee ** 2);
-    uint256 _fee3 = (baseFee ** 3);
-    uint256 _fee4 = (baseFee ** 4);
+    uint256 _basePrice = 10;
+    uint256 _fee1 = (basePrice ** 1);
+    uint256 _fee2 = (basePrice ** 2);
+    uint256 _fee3 = (basePrice ** 3);
+    uint256 _fee4 = (basePrice ** 4);
+
+    //@dev checks the address of the toll booth by which cars enter
+    function checkTollAddress(address TollBooth, uint256 tollDeposit)  returns (bool addressConfirmed) {
+        var check = balances[addressConfirmed];
+        balances.tollDeposit = tollDeposit;
+    }
+
+    
 
     //@dev confirms initial owner
     constructor() internal {

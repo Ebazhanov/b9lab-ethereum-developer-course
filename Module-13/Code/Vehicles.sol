@@ -8,7 +8,9 @@ import "./FinalProject.sol";
 
 
 contract Vehicles {
+
     using SafeMath for uint256;
+    //надо добавлять?
     uint256 vehicleEntry;
     uint256 vehicleExit;
 

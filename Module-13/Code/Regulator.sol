@@ -8,10 +8,21 @@ import "./Vehicles.sol";
 
 contract Regulator {
 
-    using SafeMath for uint256;
+using SafeMath for uint256;
+
+
+    struct Cars {
+    uint256 vin;
+    uint license; 	
+    }
+    mapping (address => uint) public cars;
+     
+  
 
     address[] public contracts;
+
     address public regulatorOwner;
+    
     uint256 _isAllowed = 1;
 
 
