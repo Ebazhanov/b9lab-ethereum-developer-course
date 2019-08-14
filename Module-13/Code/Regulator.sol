@@ -1,5 +1,5 @@
 pragma solidity >=0.4.25 <0.6.0;
-//updated
+
 import "./SafeMath.sol";
 import './ToolBoothOperator.sol';
 import './FinalProject.sol';
@@ -7,41 +7,28 @@ import "./Vehicles.sol";
 import "./SafeMath.sol";
 
 
+
 contract Regulator {
 
 using SafeMath for uint256;
 
-
-    struct Cars {
-    uint256 vin;
-    uint256 license;
-    uint256 vehicleType0;
-    uint256 vehicleType1;
-    uint256 vehicleType2;
-    uint256 vehicleType3;
-    }
-
-    mapping (address => uint) public cars;
-     
+    //@dev owner of regulator 
     address public regulatorOwner;
 
     address[] public contracts;
 
-    uint256 _isRegistered = 1;
+   
 
 
     constructor() internal {
         regulatorOwner = msg.sender;
     }
-
+    //@dev only owner
     modifier onlyOwner() {
         require(msg.sender == regulatorOwner, "Only executable by owner");
         _;
     }
-    modifier isAllowed() {
-        require(_isAllowed[i] == 1, "Cars on the road must be allowed by the regulator");
-        _;
-    }
+    
 
     function setVehicleTypes() public returns (uint) {
 
