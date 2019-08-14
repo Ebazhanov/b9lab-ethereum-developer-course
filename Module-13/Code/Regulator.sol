@@ -4,6 +4,7 @@ import "./SafeMath.sol";
 import './ToolBoothOperator.sol';
 import './FinalProject.sol';
 import "./Vehicles.sol";
+import "./SafeMath.sol";
 
 
 contract Regulator {
@@ -13,17 +14,20 @@ using SafeMath for uint256;
 
     struct Cars {
     uint256 vin;
-    uint license; 	
+    uint256 license;
+    uint256 vehicleType0;
+    uint256 vehicleType1;
+    uint256 vehicleType2;
+    uint256 vehicleType3;
     }
+
     mapping (address => uint) public cars;
      
-  
+    address public regulatorOwner;
 
     address[] public contracts;
 
-    address public regulatorOwner;
-    
-    uint256 _isAllowed = 1;
+    uint256 _isRegistered = 1;
 
 
     constructor() internal {

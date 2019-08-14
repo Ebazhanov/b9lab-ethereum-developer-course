@@ -26,6 +26,12 @@ contract TollBoothOperator {
     //@dev owner of the toll booth
     address public TollBoothOwner;
 
+    //@dev price calculation per vehicle type
+    uint256 _basePrice = 10;
+    uint256 _fee1 = (basePrice ** 1);
+    uint256 _fee2 = (basePrice ** 2);
+    uint256 _fee3 = (basePrice ** 3);
+    uint256 _fee4 = (basePrice ** 4);
 
     //@dev array for toll booth units
     uint256 [] addTollBooth;
@@ -33,11 +39,8 @@ contract TollBoothOperator {
     uint256 newFeeValue = 2;
 
 
-    struct Results {
-        
-        address TollBooth;
-        uint256 tollDeposit;
-    }
+    uint256 tollDeposit;
+   
     
     mapping(address => Results) public  balances;
     bool tollAddressConfirmed = false;
@@ -47,7 +50,7 @@ contract TollBoothOperator {
     bool _isAllowedOnRoad = false;
 
     //@dev array for vehicle types
-    // Не правильный синтаксис нужно пофиксить
+    // Неправильный синтаксис нужно пофиксить
     // string[4] memory VehicleTypes ["vehicleType0", "vehicleType1", "vehicleType2", "vehicleType3"];
 
     //@dev deposits to enter/exit
@@ -55,12 +58,7 @@ contract TollBoothOperator {
     uint256 _deposit = 1;
     uint256 _openGate = false;
 
-    //@dev price calculation per vehicle type
-    uint256 _basePrice = 10;
-    uint256 _fee1 = (basePrice ** 1);
-    uint256 _fee2 = (basePrice ** 2);
-    uint256 _fee3 = (basePrice ** 3);
-    uint256 _fee4 = (basePrice ** 4);
+    
 
     //@dev checks the address of the toll booth by which cars enter
     function checkTollAddress(address TollBooth, uint256 tollDeposit)  returns (bool addressConfirmed) {
