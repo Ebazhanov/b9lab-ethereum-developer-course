@@ -63,8 +63,8 @@ Questions with radio buttons have one answer, questions with checkboxes may have
  - [ ] In the root of the tree
  
 #### 1.12. How is data collected from a Merkle tree?
- - [ ] The tree is traversed depth-first and data is read from each leaf
- - [x] The tree is traversed depth-first and data is read from every node
+ - [x] The tree is traversed depth-first and data is read from each leaf
+ - [ ] The tree is traversed depth-first and data is read from every node
  - [ ] The data is extracted from the merkle root
  
 #### 1.13. What is a node in a Merkle Tree?
@@ -126,8 +126,8 @@ Questions with radio buttons have one answer, questions with checkboxes may have
  
 #### 1.25. How does a hashtable, whose keys are hashed from the values, compare to a table whose content is indexed by arbitrary id? Select all correct statements.
  - [ ] a table indexed by arbitrary id is faster to read
- - [ ] a table indexed by hash allows incorporation of checks for protection from error and malice, unlike one by arbitrary id
- - [x] a table indexed by hash can grow much larger than one by arbitrary id
+ - [x] a table indexed by hash allows incorporation of checks for protection from error and malice, unlike one by arbitrary id
+ - [ ] a table indexed by hash can grow much larger than one by arbitrary id
  - [x] a table indexed by arbitrary id can hold duplicate values, unlike one by hash
  
 #### 1.26. What is the double-spend attack within Bitcoin?
@@ -138,7 +138,7 @@ Questions with radio buttons have one answer, questions with checkboxes may have
 #### 1.27. Select all statements that are true for Proof-of-Work
  - [x] Any miner can propose new blocks
  - [ ] Potential miners must get approval by the network
- - [ ] More than one miner can find a correct block in the same time
+ - [x] More than one miner can find a correct block in the same time
 
 #### 1.28. What is an uncle, a.k.a. ommer?
  - [ ] an uncle is a block that contains specific information that identifies it as an uncle
@@ -152,8 +152,8 @@ Questions with radio buttons have one answer, questions with checkboxes may have
 
 #### 1.30. Without thinking about specific implementations, select all statements that are sought after, or true, for desirable Proof-of-Stake algorithms
  - [ ] Anyone can propose new blocks
- - [ ] Miners with a stake in the network can propose blocks
- - [ ] More than one miner can find a correct block in the same time
+ - [x] Miners with a stake in the network can propose blocks
+ - [x] More than one miner can find a correct block in the same time
  - [x] The hypothesis for PoS suggests that participants with a large stake are more trustworthy
  
 Ethereum
@@ -162,7 +162,7 @@ Ethereum
 This section covers the Ethereum stack specifically. This includes some questions on how Ethereum works, on Solidity, Web3 and Go-ethereum. Questions with radio buttons have one answer, questions with checkboxes may have more than one correct answer.
 
 #### 2.1. Select all statements that apply to the Ethereum public network
- - [ ] Ethereum utilises cryptoeconomic incentives
+ - [x] Ethereum utilises cryptoeconomic incentives
  - [ ] Account balances are hidden on Ethereum
  - [x] *When a group or individual controls a large majority of mining power, the integrity of past blocks is not necessarily compromised
  - [x] All you need to participate is a client and an internet connection
@@ -192,7 +192,7 @@ SOLIDITY BASICS
  - [x] address.balance
  
 #### 3.2. Which data types are of fixed size?
- - [ ] uint
+ - [x] uint
  - [x] uint128
  - [ ] bytes
  - [x] bytes32
@@ -215,13 +215,13 @@ Assume a contract named MetaCoin exists
 #### 3.6. In Solidity, how can a function call the fallback function of a remote contract instance, in the context of the remote contract instance?
  - [ ] `address.delegatecall("")`
  - [x] `address.call("")`
- - [ ] `address.send(123)`
- - [ ] `address.transfer(123)`
+ - [x] `address.send(123)`
+ - [x] `address.transfer(123)`
  
 #### 3.7. In Solidity, which of the following are fixed array types?
  - [ ] `bytes`
  - [x] `bytes1`
- - [ ] `bytes32`
+ - [x] `bytes32`
  
 #### 3.8. What is the `struct` type?
  - [ ] Struct is an array type
@@ -262,7 +262,7 @@ FUNCTIONS
 #### 4.2. Which of these coding patterns is, or are, to be avoided?
  - [x] looping through an array of addresses to send value to each of the addresses
  - [ ] letting individual account owners call a refund function
- - [ ] sending value to an address, then flagging the transfer as done
+ - [x] sending value to an address, then flagging the transfer as done
  
 #### 4.3. What is a `constant` function?
  - [ ] A function that cannot be changed
@@ -427,18 +427,18 @@ WEB3
 - - - - 
 #### 6.1. Select all correct web3.js v0.20.x calls that send a transaction to a non-constant (neither `view` nor `pure`) function called `sendCoin` in a contract named `MetaCoin`. Assume that `metacoin = web3.eth.contract(metacoinABI).at(metacoinAddress)` has been executed successfully.
  - [x] `metacoin.sendCoin.sendTransaction(web3.eth.accounts[1], {from: web3.eth.coinbase, gas: 60000});`
- - [ ] `metacoin.sendCoin(web3.eth.accounts[1], {from: web3.eth.coinbase, gas: 60000});`
+ - [x] `metacoin.sendCoin(web3.eth.accounts[1], {from: web3.eth.coinbase, gas: 60000});`
  - [ ] `metacoin.sendCoin.call(web3.eth.accounts[1], {from: web3.eth.coinbase, gas: 60000});`
  
 #### 6.2. Select all correct web3.js v0.20.x calls that call, without a transaction, a constant (`view` or `pure`) function called `getBalance` in a contract named MetaCoin. Assume that `metacoin = web3.eth.contract(metacoinABI).at(metacoinAddress)` has been executed successfully.
  - [ ] `metacoin.getBalance.sendTransaction(web3.eth.accounts[1], {from: web3.eth.coinbase, gas: 60000});`
- - [ ] `metacoin.getBalance(web3.eth.accounts[1], {from: web3.eth.coinbase, gas: 60000});`
+ - [x] `metacoin.getBalance(web3.eth.accounts[1], {from: web3.eth.coinbase, gas: 60000});`
  - [x] `metacoin.getBalance.call(web3.eth.accounts[1], {from: web3.eth.coinbase, gas: 60000});`
  
 #### 6.3. Select all valid statements about libraries:
  - [ ] Libraries can store data
- - [ ] Libraries can define constant variables
- - [ ] When using library-defined structures, the data is stored in the calling contract
+ - [x] Libraries can define constant variables
+ - [x] When using library-defined structures, the data is stored in the calling contract
  - [x] Library functions can be called by contracts
- - [ ] Library functions can be called by other libraries
- - [x] Libraries must be deployed again for each new contract using them
+ - [x] Library functions can be called by other libraries
+ - [ ] Libraries must be deployed again for each new contract using them
