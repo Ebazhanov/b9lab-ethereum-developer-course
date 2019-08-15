@@ -142,8 +142,8 @@ Questions with radio buttons have one answer, questions with checkboxes may have
 
 #### 1.28. What is an uncle, a.k.a. ommer?
  - [ ] an uncle is a block that contains specific information that identifies it as an uncle
- - [x] an uncle is a block that failed to be identified as the parent of another block
- - [ ] an uncle is a block that is referenced by another one according to certain criteria
+ - [ ] an uncle is a block that failed to be identified as the parent of another block
+ - [x] an uncle is a block that is referenced by another one according to certain criteria
 
 #### 1.29. What is the difficulty in a blockchain network?
  - [x] The difficulty determines how likely it is for a miner to find a valid block
