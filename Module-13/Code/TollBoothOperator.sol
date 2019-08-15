@@ -22,18 +22,18 @@ contract TollBoothOperator {
 
     //@dev all car types
     struct Cars {
-    address vin;
+    uint256 vin;
     uint256 vehicleType0;
     uint256 vehicleType1;
     uint256 vehicleType2;
     uint256 vehicleType3;
-    uint256 isRegisteredByRegulator=1;
-    uint256 isAllowedByOperator=1;
+    uint256 isRegisteredByRegulator;
+    uint256 isAllowedByOperator;
     uint256 isAllowedOnTheRoad=true;
-
     mapping (address => Tollbooths) public tollBooths;
     }
-    uint256 public numCars = 0;
+    
+    uint256 public numCarsId = 0;
     mapping (address => Cars) public cars;
 
     uint256  basePrice = 10;
@@ -65,12 +65,20 @@ contract TollBoothOperator {
     }
   
     modifier isRegistered() {
-        require( isRegisteredByRegulator == 1, "Cars on the road must be registered with regulator");
+        require( cars[vins]isRegisteredByRegulator == 1, "Cars on the road must be registered with regulator");
         _;
     }
+    function checkCarRegistration(uint256 isRegisteredByRegulator, uint256 isAllowedByOperator) public view isRegistered isAllowed
+    returns (unit256 carId) {  
+    var registration = cars[numCarsId];
+    registration.isRegisteredByRegulator = isRegisteredByRegulator;
+    registration.isAllowedByOperator = isAllowedByOperator;
+    numCarsId ++;
+    carId = numCarsId;    
+}
+   
 
-
-    function checkVehicleIsAllowed () returns(bool res) public view isRegistered isAllowed {
+   /*function checkVehicleIsAllowed () returns(bool res) 
     // счётчик машин и создания уникального вина для каждой машины
     vin = ++numCars;
        address[] memory tollBooths = new address[]
@@ -79,7 +87,7 @@ contract TollBoothOperator {
        else
        isAllowedOnTheRoad = false;
     }
-    
+    */
     
 
     //TODO
