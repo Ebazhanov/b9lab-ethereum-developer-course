@@ -3,6 +3,14 @@
 - [google-driver-archive](https://drive.google.com/drive/u/2/folders/1J_li7m4BQdUXWfHGQu349MqSF358EMIV)
 - [github-dashboard](https://github.com/users/Ebazhanov/projects/1)
 
+Examples of projects:
+---------------------
+- [Splitter](https://github.com/Ebazhanov/b9lab-project1-splitter)
+- [Remmitance](https://github.com/Ebazhanov/b9lab-project2-rock-paper-scissors)
+- [Rock-paper-scissors](https://github.com/Ebazhanov/b9lab-Project3-rock-paper-scissors)
+- [Final project](https://github.com/monkrus/solidity_test)
+
+
 *****************************************************************************************************
 
 Progress:
