@@ -1,4 +1,4 @@
-## [b9lab courses](https://academy.b9lab.com/dashboard) (ebazhanov@yahoo.com/beHappy1)
+## [b9lab courses](https://academy.b9lab.com/dashboard)
 
 - [google-driver-archive](https://drive.google.com/drive/u/2/folders/1J_li7m4BQdUXWfHGQu349MqSF358EMIV)
 - [github-dashboard](https://github.com/users/Ebazhanov/projects/1)
