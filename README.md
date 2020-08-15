@@ -1,4 +1,6 @@
-## [XXXX courses](https://academy.b9lab.com/dashboard)
+Ethereum-Developer-Course
+------
+> https://academy.b9lab.com/courses/
 
 - [google-driver-archive](https://drive.google.com/drive/u/2/folders/1J_li7m4BQdUXWfHGQu349MqSF358EMIV)
 - [github-dashboard](https://github.com/users/Ebazhanov/projects/1)
@@ -115,4 +117,3 @@ The toolkit to aid the development of decentralised applications is growing. Thi
 * Instantiate Web3 and communicate with a contract from an HTML page
 * Use client side signing and remote nodes for light DApps
 * How does Web3 and Truffle work with Angular.js?
-
