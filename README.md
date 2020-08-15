@@ -49,20 +49,20 @@ Progress:
 
 ##### Module 4 - Web3 and Truffle
 - Practice: done
-- Pop Quiz-1: [done](https://github.com/Ebazhanov/b9lab-ethereum-developer-course/blob/master/Module-4/Pop-Quiz-4.1.md)
-- Pop Quiz-2: [done](https://github.com/Ebazhanov/b9lab-ethereum-developer-course/blob/master/Module-4/Pop-Quiz-4.2.md)
+- Pop Quiz-1: [done](https://github.com/Ebazhanov/b9lab-ethereum-developer-course/blob/master/Module-04/Pop-Quiz-4.1.md)
+- Pop Quiz-2: [done](https://github.com/Ebazhanov/b9lab-ethereum-developer-course/blob/master/Module-04/Pop-Quiz-4.2.md)
 
 ##### Module 3 - Contracts
 - Practice: done
-- Pop Quiz: [done](https://github.com/Ebazhanov/b9lab-ethereum-developer-course/tree/master/Module-3)
+- Pop Quiz: [done](https://github.com/Ebazhanov/b9lab-ethereum-developer-course/tree/master/Module-03)
 
 ##### Module 2 - Ethereum Basics?
 - Practice: done
-- Pop Quiz: [done](https://github.com/Ebazhanov/b9lab-ethereum-developer-course/blob/master/Module-2/Pop-Quiz-2.md)
+- Pop Quiz: [done](https://github.com/Ebazhanov/b9lab-ethereum-developer-course/blob/master/Module-02/Pop-Quiz-2.md)
 
 ##### Module 1 'What is Blockchain' 
 - Practice: done
-- Pop Quiz: [done](https://github.com/Ebazhanov/b9lab-ethereum-developer-course/blob/master/Module-1/PracticeQuiz-1.md)
+- Pop Quiz: [done](https://github.com/Ebazhanov/b9lab-ethereum-developer-course/blob/master/Module-01/PracticeQuiz-1.md)
 
 
 - - - - - - - - - - - - - - - - - - - - - 
